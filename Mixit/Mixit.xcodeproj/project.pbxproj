@@ -15,6 +15,9 @@
 		A64256261C5D4E210056F3F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64256241C5D4E210056F3F2 /* LaunchScreen.storyboard */; };
 		A64256311C5D4E210056F3F2 /* MixitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64256301C5D4E210056F3F2 /* MixitTests.swift */; };
 		A642563C1C5D4E210056F3F2 /* MixitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A642563B1C5D4E210056F3F2 /* MixitUITests.swift */; };
+		A642564A1C5D7CDA0056F3F2 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64256491C5D7CDA0056F3F2 /* Audio.swift */; };
+		A642564B1C5D7CDA0056F3F2 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64256491C5D7CDA0056F3F2 /* Audio.swift */; };
+		A642564C1C5D7CDA0056F3F2 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64256491C5D7CDA0056F3F2 /* Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,7 @@
 		A64256371C5D4E210056F3F2 /* MixitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A642563B1C5D4E210056F3F2 /* MixitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixitUITests.swift; sourceTree = "<group>"; };
 		A642563D1C5D4E210056F3F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A64256491C5D7CDA0056F3F2 /* Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				A64256171C5D4E210056F3F2 /* Mixit */,
+				A64256511C5D7E730056F3F2 /* Audio */,
 				A642562F1C5D4E210056F3F2 /* MixitTests */,
 				A642563A1C5D4E210056F3F2 /* MixitUITests */,
 				A64256161C5D4E210056F3F2 /* Products */,
@@ -126,6 +131,15 @@
 				A642563D1C5D4E210056F3F2 /* Info.plist */,
 			);
 			path = MixitUITests;
+			sourceTree = "<group>";
+		};
+		A64256511C5D7E730056F3F2 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				A64256491C5D7CDA0056F3F2 /* Audio.swift */,
+			);
+			name = Audio;
+			path = Mixit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A642564A1C5D7CDA0056F3F2 /* Audio.swift in Sources */,
 				A64256211C5D4E210056F3F2 /* Mixit.xcdatamodeld in Sources */,
 				A642561B1C5D4E210056F3F2 /* ViewController.swift in Sources */,
 				A64256191C5D4E210056F3F2 /* AppDelegate.swift in Sources */,
@@ -272,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A642564B1C5D7CDA0056F3F2 /* Audio.swift in Sources */,
 				A64256311C5D4E210056F3F2 /* MixitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A642564C1C5D7CDA0056F3F2 /* Audio.swift in Sources */,
 				A642563C1C5D4E210056F3F2 /* MixitUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
