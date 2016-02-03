@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A64256191C5D4E210056F3F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64256181C5D4E210056F3F2 /* AppDelegate.swift */; };
 		A642561B1C5D4E210056F3F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A642561A1C5D4E210056F3F2 /* ViewController.swift */; };
-		A642561E1C5D4E210056F3F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A642561C1C5D4E210056F3F2 /* Main.storyboard */; };
 		A64256211C5D4E210056F3F2 /* Mixit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A642561F1C5D4E210056F3F2 /* Mixit.xcdatamodeld */; };
 		A64256231C5D4E210056F3F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A64256221C5D4E210056F3F2 /* Assets.xcassets */; };
 		A64256261C5D4E210056F3F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64256241C5D4E210056F3F2 /* LaunchScreen.storyboard */; };
@@ -18,6 +17,8 @@
 		A642564A1C5D7CDA0056F3F2 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64256491C5D7CDA0056F3F2 /* Audio.swift */; };
 		A642564B1C5D7CDA0056F3F2 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64256491C5D7CDA0056F3F2 /* Audio.swift */; };
 		A642564C1C5D7CDA0056F3F2 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64256491C5D7CDA0056F3F2 /* Audio.swift */; };
+		CD103EF51C623B0C005CCE35 /* UserInterfaces in Resources */ = {isa = PBXBuildFile; fileRef = CD103EF41C623B0C005CCE35 /* UserInterfaces */; };
+		CD103F341C626C55005CCE35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD103F331C626C55005CCE35 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +42,6 @@
 		A64256151C5D4E210056F3F2 /* Mixit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mixit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A64256181C5D4E210056F3F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A642561A1C5D4E210056F3F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A642561D1C5D4E210056F3F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A64256201C5D4E210056F3F2 /* Mixit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mixit.xcdatamodel; sourceTree = "<group>"; };
 		A64256221C5D4E210056F3F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A64256251C5D4E210056F3F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +53,8 @@
 		A642563B1C5D4E210056F3F2 /* MixitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixitUITests.swift; sourceTree = "<group>"; };
 		A642563D1C5D4E210056F3F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A64256491C5D7CDA0056F3F2 /* Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		CD103EF41C623B0C005CCE35 /* UserInterfaces */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UserInterfaces; sourceTree = "<group>"; };
+		CD103F331C626C55005CCE35 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,11 +108,12 @@
 			children = (
 				A64256181C5D4E210056F3F2 /* AppDelegate.swift */,
 				A642561A1C5D4E210056F3F2 /* ViewController.swift */,
-				A642561C1C5D4E210056F3F2 /* Main.storyboard */,
+				CD103F331C626C55005CCE35 /* Main.storyboard */,
 				A64256221C5D4E210056F3F2 /* Assets.xcassets */,
 				A64256241C5D4E210056F3F2 /* LaunchScreen.storyboard */,
 				A64256271C5D4E210056F3F2 /* Info.plist */,
 				A642561F1C5D4E210056F3F2 /* Mixit.xcdatamodeld */,
+				CD103EF41C623B0C005CCE35 /* UserInterfaces */,
 			);
 			path = Mixit;
 			sourceTree = "<group>";
@@ -250,8 +253,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A64256261C5D4E210056F3F2 /* LaunchScreen.storyboard in Resources */,
+				CD103F341C626C55005CCE35 /* Main.storyboard in Resources */,
+				CD103EF51C623B0C005CCE35 /* UserInterfaces in Resources */,
 				A64256231C5D4E210056F3F2 /* Assets.xcassets in Resources */,
-				A642561E1C5D4E210056F3F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,14 +321,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A642561C1C5D4E210056F3F2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A642561D1C5D4E210056F3F2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A64256241C5D4E210056F3F2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -508,6 +504,7 @@
 				A64256421C5D4E210056F3F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A64256431C5D4E210056F3F2 /* Build configuration list for PBXNativeTarget "MixitTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +513,7 @@
 				A64256451C5D4E210056F3F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A64256461C5D4E210056F3F2 /* Build configuration list for PBXNativeTarget "MixitUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +522,7 @@
 				A64256481C5D4E210056F3F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
