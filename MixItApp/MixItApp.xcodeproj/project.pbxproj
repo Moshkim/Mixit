@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6D315961C7A786D00B5EF9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315951C7A786D00B5EF9D /* AppDelegate.swift */; };
+		A6D315981C7A786D00B5EF9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315971C7A786D00B5EF9D /* ViewController.swift */; };
+		A6D3159B1C7A786D00B5EF9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D315991C7A786D00B5EF9D /* Main.storyboard */; };
+		A6D3159E1C7A786D00B5EF9D /* MixItApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6D3159C1C7A786D00B5EF9D /* MixItApp.xcdatamodeld */; };
+		A6D315A01C7A786D00B5EF9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6D3159F1C7A786D00B5EF9D /* Assets.xcassets */; };
+		A6D315A31C7A786D00B5EF9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D315A11C7A786D00B5EF9D /* LaunchScreen.storyboard */; };
+		A6D315AE1C7A786D00B5EF9D /* MixItAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315AD1C7A786D00B5EF9D /* MixItAppTests.swift */; };
+		A6D315B91C7A786D00B5EF9D /* MixItAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315B81C7A786D00B5EF9D /* MixItAppUITests.swift */; };
+		A6D315C71C7A78BD00B5EF9D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D315C61C7A78BD00B5EF9D /* AVFoundation.framework */; };
+		A6D315C91C7A7A0900B5EF9D /* Music in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D315C81C7A7A0900B5EF9D /* Music */; };
+		A6D315CB1C7A7C4400B5EF9D /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */; };
+		A6D315CF1C7A7E0100B5EF9D /* Background in Resources */ = {isa = PBXBuildFile; fileRef = A6D315CE1C7A7E0100B5EF9D /* Background */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6D315AA1C7A786D00B5EF9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6D3158A1C7A786D00B5EF9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6D315911C7A786D00B5EF9D;
+			remoteInfo = MixItApp;
+		};
+		A6D315B51C7A786D00B5EF9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6D3158A1C7A786D00B5EF9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6D315911C7A786D00B5EF9D;
+			remoteInfo = MixItApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A6D315921C7A786D00B5EF9D /* MixItApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixItApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6D315951C7A786D00B5EF9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6D315971C7A786D00B5EF9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6D3159A1C7A786D00B5EF9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6D3159D1C7A786D00B5EF9D /* MixItApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MixItApp.xcdatamodel; sourceTree = "<group>"; };
+		A6D3159F1C7A786D00B5EF9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6D315A21C7A786D00B5EF9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6D315A41C7A786D00B5EF9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6D315A91C7A786D00B5EF9D /* MixItAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixItAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6D315AD1C7A786D00B5EF9D /* MixItAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixItAppTests.swift; sourceTree = "<group>"; };
+		A6D315AF1C7A786D00B5EF9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6D315B41C7A786D00B5EF9D /* MixItAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixItAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6D315B81C7A786D00B5EF9D /* MixItAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixItAppUITests.swift; sourceTree = "<group>"; };
+		A6D315BA1C7A786D00B5EF9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6D315C61C7A78BD00B5EF9D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A6D315C81C7A7A0900B5EF9D /* Music */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Music; path = ../../Music; sourceTree = "<group>"; };
+		A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerViewController.swift; sourceTree = "<group>"; };
+		A6D315CE1C7A7E0100B5EF9D /* Background */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Background; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6D3158F1C7A786D00B5EF9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6D315C91C7A7A0900B5EF9D /* Music in Frameworks */,
+				A6D315C71C7A78BD00B5EF9D /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6D315A61C7A786D00B5EF9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6D315B11C7A786D00B5EF9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6D315891C7A786D00B5EF9D = {
+			isa = PBXGroup;
+			children = (
+				A6D315C61C7A78BD00B5EF9D /* AVFoundation.framework */,
+				A6D315941C7A786D00B5EF9D /* MixItApp */,
+				A6D315AC1C7A786D00B5EF9D /* MixItAppTests */,
+				A6D315B71C7A786D00B5EF9D /* MixItAppUITests */,
+				A6D315931C7A786D00B5EF9D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6D315931C7A786D00B5EF9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6D315921C7A786D00B5EF9D /* MixItApp.app */,
+				A6D315A91C7A786D00B5EF9D /* MixItAppTests.xctest */,
+				A6D315B41C7A786D00B5EF9D /* MixItAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6D315941C7A786D00B5EF9D /* MixItApp */ = {
+			isa = PBXGroup;
+			children = (
+				A6D315951C7A786D00B5EF9D /* AppDelegate.swift */,
+				A6D315971C7A786D00B5EF9D /* ViewController.swift */,
+				A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */,
+				A6D315991C7A786D00B5EF9D /* Main.storyboard */,
+				A6D3159F1C7A786D00B5EF9D /* Assets.xcassets */,
+				A6D315C81C7A7A0900B5EF9D /* Music */,
+				A6D315CE1C7A7E0100B5EF9D /* Background */,
+				A6D315A11C7A786D00B5EF9D /* LaunchScreen.storyboard */,
+				A6D315A41C7A786D00B5EF9D /* Info.plist */,
+				A6D3159C1C7A786D00B5EF9D /* MixItApp.xcdatamodeld */,
+			);
+			path = MixItApp;
+			sourceTree = "<group>";
+		};
+		A6D315AC1C7A786D00B5EF9D /* MixItAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6D315AD1C7A786D00B5EF9D /* MixItAppTests.swift */,
+				A6D315AF1C7A786D00B5EF9D /* Info.plist */,
+			);
+			path = MixItAppTests;
+			sourceTree = "<group>";
+		};
+		A6D315B71C7A786D00B5EF9D /* MixItAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A6D315B81C7A786D00B5EF9D /* MixItAppUITests.swift */,
+				A6D315BA1C7A786D00B5EF9D /* Info.plist */,
+			);
+			path = MixItAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6D315911C7A786D00B5EF9D /* MixItApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6D315BD1C7A786D00B5EF9D /* Build configuration list for PBXNativeTarget "MixItApp" */;
+			buildPhases = (
+				A6D3158E1C7A786D00B5EF9D /* Sources */,
+				A6D3158F1C7A786D00B5EF9D /* Frameworks */,
+				A6D315901C7A786D00B5EF9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MixItApp;
+			productName = MixItApp;
+			productReference = A6D315921C7A786D00B5EF9D /* MixItApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6D315A81C7A786D00B5EF9D /* MixItAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6D315C01C7A786D00B5EF9D /* Build configuration list for PBXNativeTarget "MixItAppTests" */;
+			buildPhases = (
+				A6D315A51C7A786D00B5EF9D /* Sources */,
+				A6D315A61C7A786D00B5EF9D /* Frameworks */,
+				A6D315A71C7A786D00B5EF9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6D315AB1C7A786D00B5EF9D /* PBXTargetDependency */,
+			);
+			name = MixItAppTests;
+			productName = MixItAppTests;
+			productReference = A6D315A91C7A786D00B5EF9D /* MixItAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A6D315B31C7A786D00B5EF9D /* MixItAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6D315C31C7A786D00B5EF9D /* Build configuration list for PBXNativeTarget "MixItAppUITests" */;
+			buildPhases = (
+				A6D315B01C7A786D00B5EF9D /* Sources */,
+				A6D315B11C7A786D00B5EF9D /* Frameworks */,
+				A6D315B21C7A786D00B5EF9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6D315B61C7A786D00B5EF9D /* PBXTargetDependency */,
+			);
+			name = MixItAppUITests;
+			productName = MixItAppUITests;
+			productReference = A6D315B41C7A786D00B5EF9D /* MixItAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6D3158A1C7A786D00B5EF9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = MixMusicProduction;
+				TargetAttributes = {
+					A6D315911C7A786D00B5EF9D = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = JB4K9XSBZ5;
+					};
+					A6D315A81C7A786D00B5EF9D = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = JB4K9XSBZ5;
+						TestTargetID = A6D315911C7A786D00B5EF9D;
+					};
+					A6D315B31C7A786D00B5EF9D = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = JB4K9XSBZ5;
+						TestTargetID = A6D315911C7A786D00B5EF9D;
+					};
+				};
+			};
+			buildConfigurationList = A6D3158D1C7A786D00B5EF9D /* Build configuration list for PBXProject "MixItApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6D315891C7A786D00B5EF9D;
+			productRefGroup = A6D315931C7A786D00B5EF9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6D315911C7A786D00B5EF9D /* MixItApp */,
+				A6D315A81C7A786D00B5EF9D /* MixItAppTests */,
+				A6D315B31C7A786D00B5EF9D /* MixItAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6D315901C7A786D00B5EF9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6D315A31C7A786D00B5EF9D /* LaunchScreen.storyboard in Resources */,
+				A6D315A01C7A786D00B5EF9D /* Assets.xcassets in Resources */,
+				A6D315CF1C7A7E0100B5EF9D /* Background in Resources */,
+				A6D3159B1C7A786D00B5EF9D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6D315A71C7A786D00B5EF9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6D315B21C7A786D00B5EF9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6D3158E1C7A786D00B5EF9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6D3159E1C7A786D00B5EF9D /* MixItApp.xcdatamodeld in Sources */,
+				A6D315981C7A786D00B5EF9D /* ViewController.swift in Sources */,
+				A6D315CB1C7A7C4400B5EF9D /* MediaPlayerViewController.swift in Sources */,
+				A6D315961C7A786D00B5EF9D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6D315A51C7A786D00B5EF9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6D315AE1C7A786D00B5EF9D /* MixItAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6D315B01C7A786D00B5EF9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6D315B91C7A786D00B5EF9D /* MixItAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6D315AB1C7A786D00B5EF9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6D315911C7A786D00B5EF9D /* MixItApp */;
+			targetProxy = A6D315AA1C7A786D00B5EF9D /* PBXContainerItemProxy */;
+		};
+		A6D315B61C7A786D00B5EF9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6D315911C7A786D00B5EF9D /* MixItApp */;
+			targetProxy = A6D315B51C7A786D00B5EF9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6D315991C7A786D00B5EF9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6D3159A1C7A786D00B5EF9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6D315A11C7A786D00B5EF9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6D315A21C7A786D00B5EF9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6D315BB1C7A786D00B5EF9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6D315BC1C7A786D00B5EF9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6D315BE1C7A786D00B5EF9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = MixItApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MixMusicProduction.MixItApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A6D315BF1C7A786D00B5EF9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = MixItApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MixMusicProduction.MixItApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A6D315C11C7A786D00B5EF9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MixItAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MixMusicProduction.MixItAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MixItApp.app/MixItApp";
+			};
+			name = Debug;
+		};
+		A6D315C21C7A786D00B5EF9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MixItAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MixMusicProduction.MixItAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MixItApp.app/MixItApp";
+			};
+			name = Release;
+		};
+		A6D315C41C7A786D00B5EF9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MixItAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MixMusicProduction.MixItAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MixItApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A6D315C51C7A786D00B5EF9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MixItAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MixMusicProduction.MixItAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MixItApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6D3158D1C7A786D00B5EF9D /* Build configuration list for PBXProject "MixItApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6D315BB1C7A786D00B5EF9D /* Debug */,
+				A6D315BC1C7A786D00B5EF9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6D315BD1C7A786D00B5EF9D /* Build configuration list for PBXNativeTarget "MixItApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6D315BE1C7A786D00B5EF9D /* Debug */,
+				A6D315BF1C7A786D00B5EF9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A6D315C01C7A786D00B5EF9D /* Build configuration list for PBXNativeTarget "MixItAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6D315C11C7A786D00B5EF9D /* Debug */,
+				A6D315C21C7A786D00B5EF9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A6D315C31C7A786D00B5EF9D /* Build configuration list for PBXNativeTarget "MixItAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6D315C41C7A786D00B5EF9D /* Debug */,
+				A6D315C51C7A786D00B5EF9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A6D3159C1C7A786D00B5EF9D /* MixItApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A6D3159D1C7A786D00B5EF9D /* MixItApp.xcdatamodel */,
+			);
+			currentVersion = A6D3159D1C7A786D00B5EF9D /* MixItApp.xcdatamodel */;
+			path = MixItApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A6D3158A1C7A786D00B5EF9D /* Project object */;
+}
