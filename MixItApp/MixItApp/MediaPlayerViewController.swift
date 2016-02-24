@@ -11,7 +11,7 @@ import AVFoundation
 
 class MediaPlayerViewController: UIViewController {
     
-    var player: AVAudioPlayer = AVAudioPlayer()
+    var player:AVAudioPlayer = AVAudioPlayer()
     
     
     @IBOutlet weak var volumeSlider: UISlider!
@@ -40,32 +40,26 @@ class MediaPlayerViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-//        
-//        var filelocation = NSString(string: NSBundle().pathForResource(self.navigationItem.title, ofType: "mp3")!)
-//        var error: NSError? = nil
         
-        //        player = AVAudioPlayer(contentsOfURL: NSURL(string: filelocation as String)!)
-        //        init() {
-        //            do {
-        //                try player = AVAudioPlayer(contentsOfURL: NSURL(string: filelocation), fileTypeHint: nil)
-        //            } catch {
-        //                print(error)
-        //            }
-        //        
+        let filelocation = NSString(string: NSBundle.mainBundle().pathForResource(self.navigationItem.title, ofType: "mp3")!)
         
+        do {
+            player = try AVAudioPlayer(contentsOfURL: NSURL(string: filelocation as String)!, fileTypeHint: AVFileTypeMPEGLayer3)
+            player.play()
+        } catch let error as NSError {
+            print("AV Sound Error: \(error.localizedDescription)")
+        }
         
     }
     
+    /*
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
+    }
+    */
+    
 }
-
-/*
-// MARK: - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-// Get the new view controller using segue.destinationViewController.
-// Pass the selected object to the new view controller.
-}
-*/
-
-

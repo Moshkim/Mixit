@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
-    var songLists = ["test","test1","test2","test3"]
+    var songLists = ["testing"]
     
     @IBOutlet weak var tableList: UITableView!
     
@@ -23,6 +23,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ListViewController" {
+            let VC = segue.destinationViewController as UIViewController
+            let indexPath: NSIndexPath = tableList.indexPathForSelectedRow!
+            VC.title = songLists[indexPath.row]
+            
+        }
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -44,14 +53,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.performSegueWithIdentifier("ListViewController", sender: tableView)
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "ListViewController" {
-            let VC = segue.destinationViewController as UIViewController
-            let indexPath: NSIndexPath = tableList.indexPathForSelectedRow!
-            VC.title = songLists[indexPath.row]
-            
-        }
-    }
+    
     
 }
 

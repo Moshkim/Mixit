@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6A043A41C7D3A8300AA1EF0 /* testing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6A043A31C7D3A8300AA1EF0 /* testing.mp3 */; };
 		A6D315961C7A786D00B5EF9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315951C7A786D00B5EF9D /* AppDelegate.swift */; };
 		A6D315981C7A786D00B5EF9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315971C7A786D00B5EF9D /* ViewController.swift */; };
 		A6D3159B1C7A786D00B5EF9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D315991C7A786D00B5EF9D /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A6A043A31C7D3A8300AA1EF0 /* testing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = testing.mp3; sourceTree = "<group>"; };
 		A6D315921C7A786D00B5EF9D /* MixItApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixItApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D315951C7A786D00B5EF9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D315971C7A786D00B5EF9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		A6D315941C7A786D00B5EF9D /* MixItApp */ = {
 			isa = PBXGroup;
 			children = (
+				A6A043A31C7D3A8300AA1EF0 /* testing.mp3 */,
 				A6D315951C7A786D00B5EF9D /* AppDelegate.swift */,
 				A6D315971C7A786D00B5EF9D /* ViewController.swift */,
 				A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */,
@@ -252,6 +255,7 @@
 				A6D315A31C7A786D00B5EF9D /* LaunchScreen.storyboard in Resources */,
 				A6D315A01C7A786D00B5EF9D /* Assets.xcassets in Resources */,
 				A6D315CF1C7A7E0100B5EF9D /* Background in Resources */,
+				A6A043A41C7D3A8300AA1EF0 /* testing.mp3 in Resources */,
 				A6D3159B1C7A786D00B5EF9D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +513,7 @@
 				A6D315BF1C7A786D00B5EF9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6D315C01C7A786D00B5EF9D /* Build configuration list for PBXNativeTarget "MixItAppTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +522,7 @@
 				A6D315C21C7A786D00B5EF9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6D315C31C7A786D00B5EF9D /* Build configuration list for PBXNativeTarget "MixItAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +531,7 @@
 				A6D315C51C7A786D00B5EF9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
