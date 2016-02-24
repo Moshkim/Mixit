@@ -14,18 +14,18 @@ class MediaPlayerViewController: UIViewController {
     var player:AVAudioPlayer = AVAudioPlayer()
     
     
-    @IBOutlet weak var volumeSlider: UISlider!
+    @IBOutlet weak var slider: UISlider!
     
-    @IBAction func volumeController(sender: UISlider) {
-        player.volume = volumeSlider.value
+    @IBAction func sliderController(sender: UISlider) {
+        player.volume = slider.value
     }
-    @IBAction func stopButton(sender: AnyObject) {
+    @IBAction func stopButton(sender: UIBarButtonItem) {
         player.stop()
     }
-    @IBAction func playButton(sender: AnyObject) {
+    @IBAction func playButton(sender: UIBarButtonItem) {
         player.play()
     }
-    @IBAction func pauseButton(sender: AnyObject) {
+    @IBAction func pauseButton(sender: UIBarButtonItem) {
         player.pause()
     }
     override func viewDidLoad() {
