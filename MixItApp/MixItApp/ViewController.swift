@@ -7,15 +7,23 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
-    var songLists = ["testing"]
+    let fileManager = NSFileManager.defaultManager()
+    let musicPath = NSBundle.mainBundle().pathForResource("2", ofType: "jpg")
+
+    var songLists = [String]()
     
     @IBOutlet weak var tableList: UITableView!
     
     override func viewDidLoad() {
+        var path = NSBundle.mainBundle().resourcePath!
+        let items = try! fileManager.contentsOfDirectoryAtPath(path)
+        for item in items {
+            songLists.append(item)
+        }
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
