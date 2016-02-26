@@ -9,8 +9,9 @@
       <sourceFolder url="file://$MODULE_DIR$/MixItApp/AppDelegate.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MixItApp/MixItApp.xcdatamodeld/MixItApp.xcdatamodel" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MixItApp/ViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/MixItApp/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MixItApp/voyager.ac3" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MixItApp/MediaPlayerViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MixItApp/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MixItApp/Base.lproj/Main.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MixItAppUITests/MixItAppUITests.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MixItAppUITests/Info.plist" isTestSource="false" />
