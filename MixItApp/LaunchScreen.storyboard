@@ -34,7 +34,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="clipart-music-notes-11949848722015671592musical_note_nicu_bucule_01.svg.hi" highlightedImage="clipart-music-notes-11949848722015671592musical_note_nicu_bucule_01.svg.hi" translatesAutoresizingMaskIntoConstraints="NO" id="Flx-jB-4Qh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="clipart-music-notes-11949848722015671592musical_note_nicu_bucule_01.svg.hi" highlightedImage="clipart-music-notes-11949848722015671592musical_note_nicu_bucule_01.svg.hi" translatesAutoresizingMaskIntoConstraints="NO" id="Flx-jB-4Qh">
                                 <rect key="frame" x="180" y="231" width="240" height="128"/>
                             </imageView>
                         </subviews>
