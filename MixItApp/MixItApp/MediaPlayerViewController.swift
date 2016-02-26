@@ -19,26 +19,30 @@ class MediaPlayerViewController: UIViewController {
     @IBAction func sliderController(sender: UISlider) {
         player.volume = slider.value
     }
+    
     @IBAction func stopButton(sender: UIBarButtonItem) {
         player.stop()
     }
+    
     @IBAction func playButton(sender: UIBarButtonItem) {
         player.play()
     }
+    
     @IBAction func pauseButton(sender: UIBarButtonItem) {
         player.pause()
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.definesPresentationContext = true
         //self.tabBarController?.tabBar.hidden = true
         
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Dispose of any resources that can be recreated
     }
     
     override func viewDidAppear(animated: Bool) {
