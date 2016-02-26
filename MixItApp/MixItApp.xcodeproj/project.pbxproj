@@ -16,9 +16,7 @@
 		A6D315AE1C7A786D00B5EF9D /* MixItAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315AD1C7A786D00B5EF9D /* MixItAppTests.swift */; };
 		A6D315B91C7A786D00B5EF9D /* MixItAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315B81C7A786D00B5EF9D /* MixItAppUITests.swift */; };
 		A6D315C71C7A78BD00B5EF9D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D315C61C7A78BD00B5EF9D /* AVFoundation.framework */; };
-		A6D315C91C7A7A0900B5EF9D /* Music in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D315C81C7A7A0900B5EF9D /* Music */; };
 		A6D315CB1C7A7C4400B5EF9D /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */; };
-		A6D315CF1C7A7E0100B5EF9D /* Background in Resources */ = {isa = PBXBuildFile; fileRef = A6D315CE1C7A7E0100B5EF9D /* Background */; };
 		B2CD8B091C7EB6E6006C0470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2CD8B081C7EB6E6006C0470 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -55,9 +53,7 @@
 		A6D315B81C7A786D00B5EF9D /* MixItAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixItAppUITests.swift; sourceTree = "<group>"; };
 		A6D315BA1C7A786D00B5EF9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6D315C61C7A78BD00B5EF9D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		A6D315C81C7A7A0900B5EF9D /* Music */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Music; path = ../../Music; sourceTree = "<group>"; };
 		A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerViewController.swift; sourceTree = "<group>"; };
-		A6D315CE1C7A7E0100B5EF9D /* Background */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Background; sourceTree = "<group>"; };
 		B2CD8B081C7EB6E6006C0470 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,7 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6D315C91C7A7A0900B5EF9D /* Music in Frameworks */,
 				A6D315C71C7A78BD00B5EF9D /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,17 +107,15 @@
 		A6D315941C7A786D00B5EF9D /* MixItApp */ = {
 			isa = PBXGroup;
 			children = (
+				A6A043A31C7D3A8300AA1EF0 /* testing.mp3 */,
 				A6D315951C7A786D00B5EF9D /* AppDelegate.swift */,
+				A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */,
+				A6D315971C7A786D00B5EF9D /* ViewController.swift */,
 				A6D3159F1C7A786D00B5EF9D /* Assets.xcassets */,
-				A6D315CE1C7A7E0100B5EF9D /* Background */,
 				A6D315A41C7A786D00B5EF9D /* Info.plist */,
 				B2CD8B081C7EB6E6006C0470 /* LaunchScreen.storyboard */,
 				A6D315991C7A786D00B5EF9D /* Main.storyboard */,
-				A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */,
 				A6D3159C1C7A786D00B5EF9D /* MixItApp.xcdatamodeld */,
-				A6D315C81C7A7A0900B5EF9D /* Music */,
-				A6A043A31C7D3A8300AA1EF0 /* testing.mp3 */,
-				A6D315971C7A786D00B5EF9D /* ViewController.swift */,
 			);
 			path = MixItApp;
 			sourceTree = "<group>";
@@ -253,7 +246,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6D315A01C7A786D00B5EF9D /* Assets.xcassets in Resources */,
-				A6D315CF1C7A7E0100B5EF9D /* Background in Resources */,
 				A6A043A41C7D3A8300AA1EF0 /* testing.mp3 in Resources */,
 				B2CD8B091C7EB6E6006C0470 /* LaunchScreen.storyboard in Resources */,
 				A6D3159B1C7A786D00B5EF9D /* Main.storyboard in Resources */,

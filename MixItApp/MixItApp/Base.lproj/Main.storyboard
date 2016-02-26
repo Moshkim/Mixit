@@ -26,7 +26,7 @@
                                         <rect key="frame" x="0.0" y="92" width="375" height="38"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8FV-Ty-8zS" id="ynB-wy-duu">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="37.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -63,7 +63,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="gold" highlightedImage="gold" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qvw-zA-lU0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rose" highlightedImage="rose" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qvw-zA-lU0">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="57J-pq-dGi">
@@ -313,7 +313,7 @@
     </scenes>
     <resources>
         <image name="TempNavItem" width="30" height="30"/>
-        <image name="gold" width="1925" height="1280"/>
+        <image name="rose" width="1925" height="1280"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="N6D-eA-teC"/>
