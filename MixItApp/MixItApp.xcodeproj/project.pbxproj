@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		312FC65FA66E9D2FF43EB3FA /* voyager.ac3 in Resources */ = {isa = PBXBuildFile; fileRef = 312FC448CAC53CD015B8F885 /* voyager.ac3 */; };
 		312FCDD427514A34A8E33623 /* Music in Resources */ = {isa = PBXBuildFile; fileRef = 312FC0870DBC0EF4F946EC49 /* Music */; };
 		A6D315961C7A786D00B5EF9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315951C7A786D00B5EF9D /* AppDelegate.swift */; };
 		A6D315981C7A786D00B5EF9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315971C7A786D00B5EF9D /* ViewController.swift */; };
@@ -41,7 +40,6 @@
 
 /* Begin PBXFileReference section */
 		312FC0870DBC0EF4F946EC49 /* Music */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Music; sourceTree = "<group>"; };
-		312FC448CAC53CD015B8F885 /* voyager.ac3 */ = {isa = PBXFileReference; lastKnownFileType = file.ac3; path = voyager.ac3; sourceTree = "<group>"; };
 		A6D315921C7A786D00B5EF9D /* MixItApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixItApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D315951C7A786D00B5EF9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D315971C7A786D00B5EF9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,7 +118,6 @@
 				A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */,
 				A6D3159C1C7A786D00B5EF9D /* MixItApp.xcdatamodeld */,
 				A6D315971C7A786D00B5EF9D /* ViewController.swift */,
-				312FC448CAC53CD015B8F885 /* voyager.ac3 */,
 				312FC0870DBC0EF4F946EC49 /* Music */,
 			);
 			path = MixItApp;
@@ -255,7 +252,6 @@
 				A6D315CF1C7A7E0100B5EF9D /* Background in Resources */,
 				B2CD8B091C7EB6E6006C0470 /* LaunchScreen.storyboard in Resources */,
 				A6D3159B1C7A786D00B5EF9D /* Main.storyboard in Resources */,
-				312FC65FA66E9D2FF43EB3FA /* voyager.ac3 in Resources */,
 				312FCDD427514A34A8E33623 /* Music in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

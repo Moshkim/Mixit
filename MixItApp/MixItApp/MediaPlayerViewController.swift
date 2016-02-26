@@ -43,9 +43,10 @@ class MediaPlayerViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
 //        print(self.navigationItem.title!)
+        let file = self.navigationItem.title!
         let s = self.navigationItem.title!.substringToIndex(self.navigationItem.title!.endIndex.advancedBy(-4))
-        NSLog(s)
-        let path = NSBundle.mainBundle().pathForResource(s, ofType: "mp3", inDirectory: "/Music")
+        let ext = file.substringWithRange(Range<String.Index>(start: file.endIndex.advancedBy(-4), end: file.endIndex))
+        let path = NSBundle.mainBundle().pathForResource(s, ofType: ext, inDirectory: "/Music")
         let filelocation = NSString(string: path!)
         
         do {
