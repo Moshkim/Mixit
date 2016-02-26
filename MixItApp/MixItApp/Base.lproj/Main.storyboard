@@ -125,11 +125,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Iuh-fw-y7t">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Iuh-fw-y7t" id="0EH-SV-2gt">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ProjectName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eE-K1-I9b">
+                                            <rect key="frame" x="8" y="11" width="359" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -207,7 +215,7 @@
         <scene sceneID="mUw-CL-soe">
             <objects>
                 <navigationController title="ProjectNav" id="G4j-UC-EWy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Projects" image="TempNavItem" id="xLy-hR-m77"/>
+                    <tabBarItem key="tabBarItem" title="Projects" image="folder-32" id="xLy-hR-m77"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="niA-OB-lkT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -236,6 +244,14 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xwa-wg-eZd" id="PUw-MC-G3I">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SettingItem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahi-c3-FXG">
+                                            <rect key="frame" x="8" y="11" width="359" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -255,7 +271,7 @@
         <scene sceneID="701-eI-oCP">
             <objects>
                 <navigationController title="SettingsNav" id="otG-zu-naY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" image="TempNavItem" id="hSk-gu-tS1"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings-32" id="hSk-gu-tS1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="s2Y-27-Jrq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -293,7 +309,7 @@
         <scene sceneID="7B6-vM-Dji">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aWu-jI-Cjg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Play Track" image="TempNavItem" id="sgn-Lm-0xh"/>
+                    <tabBarItem key="tabBarItem" title="Play Track" image="play-32" id="sgn-Lm-0xh"/>
                     <toolbarItems/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -312,10 +328,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="TempNavItem" width="30" height="30"/>
+        <image name="folder-32" width="32" height="32"/>
         <image name="gold" width="1925" height="1280"/>
+        <image name="play-32" width="32" height="32"/>
+        <image name="settings-32" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="N6D-eA-teC"/>
+        <segue reference="bct-7v-83K"/>
     </inferredMetricsTieBreakers>
 </document>
