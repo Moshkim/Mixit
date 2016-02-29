@@ -46,8 +46,12 @@ class MediaPlayerViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        
-        let filelocation = NSString(string: NSBundle.mainBundle().pathForResource(self.navigationItem.title, ofType: "mp3")!)
+//        print(self.navigationItem.title!)
+        let file = self.navigationItem.title!
+        let s = self.navigationItem.title!.substringToIndex(self.navigationItem.title!.endIndex.advancedBy(-4))
+        let ext = file.substringWithRange(Range<String.Index>(start: file.endIndex.advancedBy(-4), end: file.endIndex))
+        let path = NSBundle.mainBundle().pathForResource(s, ofType: ext, inDirectory: "/Music")
+        let filelocation = NSString(string: path!)
         
         do {
             player = try AVAudioPlayer(contentsOfURL: NSURL(string: filelocation as String)!, fileTypeHint: AVFileTypeMPEGLayer3)

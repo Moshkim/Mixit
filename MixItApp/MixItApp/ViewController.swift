@@ -9,15 +9,24 @@
 import UIKit
 import MediaPlayer
 import AVFoundation
+import Foundation
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,MPMediaPickerControllerDelegate, AVAudioPlayerDelegate  {
     
-    
-    var songLists = ["testing"]
+    let fileManager = NSFileManager.defaultManager()
+    let musicPath = NSBundle.mainBundle().pathForResource("2", ofType: "jpg")
+
+    var songLists = [String]()
     
     @IBOutlet weak var tableList: UITableView!
     
     override func viewDidLoad() {
+        var path = NSBundle.mainBundle().resourcePath!
+        path.appendContentsOf("/Music")
+        let items = try! fileManager.contentsOfDirectoryAtPath(path)
+        for item in items {
+            songLists.append(item)
+        }
         super.viewDidLoad()
         title = "Media picker..."
         
@@ -53,6 +62,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+
         if segue.identifier == "ListViewController" {
             let VC = segue.destinationViewController as UIViewController
             let indexPath: NSIndexPath = tableList.indexPathForSelectedRow!
@@ -62,6 +72,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+
         return 1
     }
     
@@ -77,6 +88,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+
         self.performSegueWithIdentifier("ListViewController", sender: tableView)
     }
     
