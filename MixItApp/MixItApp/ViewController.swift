@@ -28,7 +28,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             songLists.append(item)
         }
         super.viewDidLoad()
-        title = "Media picker..."
+        title = "Play Track"
         
         buttonPickAndPlay = UIButton(type: .System)
         

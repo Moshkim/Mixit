@@ -31,12 +31,31 @@ class MediaPlayerViewController: UIViewController {
     @IBAction func pauseButton(sender: UIBarButtonItem) {
         player.pause()
     }
+    @IBOutlet weak var nameOfTrack: UILabel!
+    @IBOutlet weak var trackDuration: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let file = self.navigationItem.title!
+        let s = self.navigationItem.title!.substringToIndex(self.navigationItem.title!.endIndex.advancedBy(-4))
+        nameOfTrack.text = s
+        let ext = file.substringWithRange(Range<String.Index>(start: file.endIndex.advancedBy(-4), end: file.endIndex))
+        let path = NSBundle.mainBundle().pathForResource(s, ofType: ext, inDirectory: "/Music")
+        print(path)
+        let filelocation = NSString(string: path!)
+        player = try! AVAudioPlayer(contentsOfURL: NSURL(string: filelocation as String)!, fileTypeHint: AVFileTypeMPEGLayer3)
+        
+        var duration: NSTimeInterval {
+            get {
+                if let nameOfPlayer:AVAudioPlayer? = player {
+                    return nameOfPlayer!.duration
+                }
+                return 0
+            }
+        }
+        trackDuration.text = String(duration) + " seconds"
         //self.definesPresentationContext = true
         //self.tabBarController?.tabBar.hidden = true
-        
         // Do any additional setup after loading the view
     }
     
@@ -59,7 +78,6 @@ class MediaPlayerViewController: UIViewController {
         } catch let error as NSError {
             print("AV Sound Error: \(error.localizedDescription)")
         }
-        
     }
     
     /*
