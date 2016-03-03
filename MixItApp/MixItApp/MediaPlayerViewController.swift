@@ -18,6 +18,7 @@ class MediaPlayerViewController: UIViewController {
     
     @IBAction func sliderController(sender: UISlider) {
         player.volume = slider.value
+        // print(player.currentTime)    // may be useful when we implement sliders and stuff
     }
     
     @IBAction func stopButton(sender: UIBarButtonItem) {
@@ -36,15 +37,15 @@ class MediaPlayerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let file = self.navigationItem.title!
         let s = self.navigationItem.title!.substringToIndex(self.navigationItem.title!.endIndex.advancedBy(-4))
-        nameOfTrack.text = s
         let ext = file.substringWithRange(Range<String.Index>(start: file.endIndex.advancedBy(-4), end: file.endIndex))
         let path = NSBundle.mainBundle().pathForResource(s, ofType: ext, inDirectory: "/Music")
-        print(path)
         let filelocation = NSString(string: path!)
         player = try! AVAudioPlayer(contentsOfURL: NSURL(string: filelocation as String)!, fileTypeHint: AVFileTypeMPEGLayer3)
         
+        // Obtain duration of current sound track in seconds.
         var duration: NSTimeInterval {
             get {
                 if let nameOfPlayer:AVAudioPlayer? = player {
@@ -53,7 +54,14 @@ class MediaPlayerViewController: UIViewController {
                 return 0
             }
         }
-        trackDuration.text = String(duration) + " seconds"
+        
+        // Print info to screen
+        nameOfTrack.text = s
+        let hours = String(Int(floor(duration / 3600)))
+        let minutes = String(format:"%02d", Int(floor(duration / 60)))
+        let seconds = String(format:"%02d", Int(floor(duration % 60)))
+        trackDuration.text = hours + ":" + minutes + ":" + seconds
+        
         //self.definesPresentationContext = true
         //self.tabBarController?.tabBar.hidden = true
         // Do any additional setup after loading the view
