@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -26,7 +27,7 @@
                                         <rect key="frame" x="0.0" y="92" width="375" height="38"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8FV-Ty-8zS" id="ynB-wy-duu">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="37"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -66,8 +67,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rose" highlightedImage="rose" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qvw-zA-lU0">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="57J-pq-dGi">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="57J-pq-dGi">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="57J-pq-dGi" secondAttribute="height" multiplier="375:44" id="1VD-JP-a1a"/>
+                                    <constraint firstAttribute="width" secondItem="57J-pq-dGi" secondAttribute="height" multiplier="375:44" id="4nR-Rb-yu5"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="6g5-Im-tPK"/>
+                                    <constraint firstAttribute="height" constant="44" id="oEG-d8-XCN"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem systemItem="pause" id="f1S-ze-fMz">
                                         <connections>
@@ -76,7 +83,7 @@
                                     </barButtonItem>
                                     <barButtonItem style="plain" id="UIs-7h-Xyz">
                                         <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="aHw-T4-gYm">
-                                            <rect key="frame" x="41" y="7" width="248" height="31"/>
+                                            <rect key="frame" x="41" y="6.5" width="248" height="31"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <connections>
                                                 <action selector="sliderController:" destination="fKM-z7-Cvu" eventType="valueChanged" id="Zce-28-edi"/>
@@ -95,6 +102,20 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="WXX-GV-4ff">
+                                <rect key="frame" x="55" y="218" width="264" height="201"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WXX-GV-4ff" secondAttribute="height" multiplier="1:1" id="sY3-Yd-ToJ"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="obp-ZE-BLN" appends="YES" id="K10-sz-3Ll"/>
+                                </connections>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Qg-eX-cgn" customClass="RatingControl" customModule="MixItApp" customModuleProvider="target">
+                                <rect key="frame" x="67" y="427" width="240" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -102,16 +123,25 @@
                             <constraint firstItem="qvw-zA-lU0" firstAttribute="top" secondItem="q0K-G2-otY" secondAttribute="bottom" id="JL6-nt-4gE"/>
                             <constraint firstItem="qvw-zA-lU0" firstAttribute="bottom" secondItem="x07-7p-mzi" secondAttribute="bottomMargin" id="KeS-kW-dq3"/>
                             <constraint firstItem="qvw-zA-lU0" firstAttribute="leading" secondItem="x07-7p-mzi" secondAttribute="leadingMargin" constant="-20" id="RS7-Od-MqE"/>
+                            <constraint firstItem="WXX-GV-4ff" firstAttribute="centerX" secondItem="qvw-zA-lU0" secondAttribute="centerX" id="rU0-aZ-bKU"/>
+                            <constraint firstItem="WXX-GV-4ff" firstAttribute="centerY" secondItem="qvw-zA-lU0" secondAttribute="centerY" id="ybH-h3-h6y"/>
                         </constraints>
                     </view>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="photoImageView" destination="WXX-GV-4ff" id="5Fl-DX-Ot4"/>
+                        <outlet property="ratingControl" destination="7Qg-eX-cgn" id="NoU-KB-FpL"/>
                         <outlet property="slider" destination="aHw-T4-gYm" id="Grt-Bf-sK1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ytn-hn-qtm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="obp-ZE-BLN">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="fKM-z7-Cvu" id="8B3-wF-c3V"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1394.5" y="337.5"/>
         </scene>
@@ -128,7 +158,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Iuh-fw-y7t" id="0EH-SV-2gt">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ProjectName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eE-K1-I9b">
@@ -242,7 +272,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xwa-wg-eZd" id="PUw-MC-G3I">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SettingItem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahi-c3-FXG">
@@ -329,8 +359,9 @@
     </scenes>
     <resources>
         <image name="folder-32" width="32" height="32"/>
-        <image name="gold" width="1925" height="1280"/>
+        <image name="placeholder" width="450" height="300"/>
         <image name="play-32" width="32" height="32"/>
+        <image name="rose" width="1925" height="1280"/>
         <image name="settings-32" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>

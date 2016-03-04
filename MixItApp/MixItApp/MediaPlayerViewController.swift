@@ -9,10 +9,48 @@
 import UIKit
 import AVFoundation
 
-class MediaPlayerViewController: UIViewController {
+class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    // MARK: Initialization
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //self.definesPresentationContext = true
+        //self.tabBarController?.tabBar.hidden = true
+        
+        // Do any additional setup after loading the view
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        //        print(self.navigationItem.title!)
+        let file = self.navigationItem.title!
+        let s = self.navigationItem.title!.substringToIndex(self.navigationItem.title!.endIndex.advancedBy(-4))
+        let ext = file.substringWithRange(Range<String.Index>(start: file.endIndex.advancedBy(-4), end: file.endIndex))
+        let path = NSBundle.mainBundle().pathForResource(s, ofType: ext, inDirectory: "/Music")
+        let filelocation = NSString(string: path!)
+        
+        do {
+            player = try AVAudioPlayer(contentsOfURL: NSURL(string: filelocation as String)!, fileTypeHint: AVFileTypeMPEGLayer3)
+            player.play()
+        } catch let error as NSError {
+            print("AV Sound Error: \(error.localizedDescription)")
+        }
+        
+    }
+    
     
     var player:AVAudioPlayer = AVAudioPlayer()
     
+    
+    @IBOutlet weak var ratingControl: RatingControl!
+    @IBOutlet weak var photoImageView: UIImageView!
     
     @IBOutlet weak var slider: UISlider!
     
@@ -32,35 +70,35 @@ class MediaPlayerViewController: UIViewController {
         player.pause()
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        //self.definesPresentationContext = true
-        //self.tabBarController?.tabBar.hidden = true
-        
-        // Do any additional setup after loading the view
+    
+    
+    // MARK: UIImagePickerControllerDelegate
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        // Dismiss the picker if the user canceled.
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        // The info iinctionary contains multiple representations of the image, and this uses the original.
+        let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        photoImageView.image = selectedImage
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated
+    // MARK: Actions
+    
+    
+    @IBAction func selectImageFromPhotoLibrary(sender: UITapGestureRecognizer) {
+        let imagePickerController = UIImagePickerController()
+        // Only allow photos to be picked, not taken
+        imagePickerController.sourceType = .PhotoLibrary
+        imagePickerController.delegate = self
+        presentViewController(imagePickerController, animated: true, completion: nil)
+        
     }
     
-    override func viewDidAppear(animated: Bool) {
-//        print(self.navigationItem.title!)
-        let file = self.navigationItem.title!
-        let s = self.navigationItem.title!.substringToIndex(self.navigationItem.title!.endIndex.advancedBy(-4))
-        let ext = file.substringWithRange(Range<String.Index>(start: file.endIndex.advancedBy(-4), end: file.endIndex))
-        let path = NSBundle.mainBundle().pathForResource(s, ofType: ext, inDirectory: "/Music")
-        let filelocation = NSString(string: path!)
-        
-        do {
-            player = try AVAudioPlayer(contentsOfURL: NSURL(string: filelocation as String)!, fileTypeHint: AVFileTypeMPEGLayer3)
-            player.play()
-        } catch let error as NSError {
-            print("AV Sound Error: \(error.localizedDescription)")
-        }
-        
-    }
+    
+    
     
     /*
     // MARK: - Navigation
