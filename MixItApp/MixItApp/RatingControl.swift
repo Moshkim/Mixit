@@ -48,13 +48,13 @@ class RatingControl: UIView {
     
     override func intrinsicContentSize() -> CGSize {
         let buttonSize = Int(frame.size.height)
-        let width = (buttonSize + spacing) * stars
+        _ = (buttonSize + spacing) * stars
         
         return CGSize(width: 240, height: 44)
     }
     
     override func layoutSubviews() {
-        var buttonSize = Int(frame.size.height)
+        let buttonSize = Int(frame.size.height)
         var buttonFrame = CGRect(x: 0, y: 0, width: buttonSize, height: buttonSize)
         
         for (index, button) in ratingButtons.enumerate() {
