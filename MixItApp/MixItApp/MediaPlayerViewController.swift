@@ -46,7 +46,7 @@ class MediaPlayerViewController: UIViewController {
         let filelocation = NSString(string: path!)
         player = try! AVAudioPlayer(contentsOfURL: NSURL(string: filelocation as String)!, fileTypeHint: AVFileTypeMPEGLayer3)
         
-        // Obtain duration of current sound track in seconds.
+        // Get duration of current sound track in seconds
         var duration: NSTimeInterval {
             get {
                 if let nameOfPlayer:AVAudioPlayer? = player {
@@ -60,7 +60,7 @@ class MediaPlayerViewController: UIViewController {
         nameOfTrack.text = s
         fileType.text = ext
         let hours = String(Int(floor(duration / 3600)))
-        let minutes = String(format:"%02d", Int(floor(duration / 60)))
+        let minutes = String(format:"%02d", Int(floor((duration / 60) % 60)))
         let seconds = String(format:"%02d", Int(floor(duration % 60)))
         trackDuration.text = hours + ":" + minutes + ":" + seconds
         

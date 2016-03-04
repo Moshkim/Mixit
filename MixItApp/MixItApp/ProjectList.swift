@@ -12,11 +12,13 @@ import UIKit
 struct ProjectList {
     var name: String
     var numberOfTracks: Int
+    var trackDuration: NSTimeInterval  // in seconds
     var baseTrack: String?
     
-    init(name: String, numberOfTracks: Int, baseTrack: String?) {
+    init(name: String, numberOfTracks: Int, trackDuration: NSTimeInterval, baseTrack: String?) {
         self.name = name
         self.numberOfTracks = numberOfTracks
+        self.trackDuration = trackDuration
         self.baseTrack = baseTrack
     }
 }

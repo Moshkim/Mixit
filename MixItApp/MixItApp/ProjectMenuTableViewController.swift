@@ -45,8 +45,13 @@ class ProjectMenuTableViewController: UITableViewController {
 
         // Configure the cell...
         let project = projects[indexPath.row] as ProjectList
+        
+        let hours = String(Int(floor(project.trackDuration / 3600)))
+        let minutes = String(format:"%02d", Int(floor((project.trackDuration / 60) % 60)))
+        let seconds = String(format:"%02d", Int(floor(project.trackDuration % 60)))
+        
         cell.textLabel?.text = project.name
-        cell.detailTextLabel?.text = "Number of tracks: " + String(project.numberOfTracks)
+        cell.detailTextLabel?.text = "Number of tracks: " + String(project.numberOfTracks) + "\t\t\t\(hours):\(minutes):\(seconds)"
 
         return cell
     }
@@ -54,7 +59,7 @@ class ProjectMenuTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
-        let row = indexPath.row
+        //let row = indexPath.row
         //print(projects[row].name)
     }
 
@@ -102,20 +107,8 @@ class ProjectMenuTableViewController: UITableViewController {
         if segue.identifier == "ProjectInfoList" {
             let VC = segue.destinationViewController as UIViewController
             let indexPath: NSIndexPath = tableView.indexPathForSelectedRow!
-            let row = indexPath.row
-            VC.title = projects[row].name
+            VC.title = projects[indexPath.row].name
         }
     }
 
 }
-
-/*
-override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-
-if segue.identifier == "ListViewController" {
-let VC = segue.destinationViewController as UIViewController
-let indexPath: NSIndexPath = tableList.indexPathForSelectedRow!
-VC.title = songLists[indexPath.row]
-
-}
-*/
