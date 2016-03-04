@@ -56,7 +56,7 @@ class RatingControl: UIView {
         var buttonFrame = CGRect(x: 0, y: 0, width: buttonSize, height: buttonSize)
         
         for (index, button) in ratingButtons.enumerate() {
-            buttonFrame.origin.x = CGFloat(index * (buttonSize + 5))
+            buttonFrame.origin.x = CGFloat(index * (buttonSize + 15))
             button.frame = buttonFrame
         }
         updateButtonSelectionStates()
@@ -66,7 +66,6 @@ class RatingControl: UIView {
     func ratingButtonTapped(button: UIButton){
         rating = ratingButtons.indexOf(button)! + 1
         updateButtonSelectionStates()
-        print("Button pressed S2")
     }
     
     func updateButtonSelectionStates() {
