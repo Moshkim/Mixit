@@ -51,7 +51,6 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
     
     @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var photoImageView: UIImageView!
-    
     @IBOutlet weak var slider: UISlider!
     
     @IBAction func sliderController(sender: UISlider) {
@@ -81,7 +80,11 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         // The info iinctionary contains multiple representations of the image, and this uses the original.
         let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        // Set photoImageView to display the selected image.
         photoImageView.image = selectedImage
+        
+        // Dismiss the picker.
         dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -89,25 +92,18 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
     
     
     @IBAction func selectImageFromPhotoLibrary(sender: UITapGestureRecognizer) {
+        // UIImagePickerController is a view controller that lets a user pick media from their photo library.
         let imagePickerController = UIImagePickerController()
-        // Only allow photos to be picked, not taken
+        
+        // Only allow photos to be picked, not taken.
         imagePickerController.sourceType = .PhotoLibrary
+        
+        // Make sure ViewController is notified when the user picks an image.
         imagePickerController.delegate = self
+        
         presentViewController(imagePickerController, animated: true, completion: nil)
         
     }
     
-    
-    
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
     
 }
