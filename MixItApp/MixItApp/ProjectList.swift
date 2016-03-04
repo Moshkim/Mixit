@@ -10,11 +10,11 @@ import Foundation
 import UIKit
 
 struct ProjectList {
-    var name: String?
+    var name: String
     var numberOfTracks: Int
     var baseTrack: String?
     
-    init(name: String?, numberOfTracks: Int, baseTrack: String?) {
+    init(name: String, numberOfTracks: Int, baseTrack: String?) {
         self.name = name
         self.numberOfTracks = numberOfTracks
         self.baseTrack = baseTrack

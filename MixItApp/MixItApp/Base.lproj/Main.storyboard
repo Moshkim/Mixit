@@ -349,6 +349,9 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="nameOfProject" destination="DEv-GR-3h2" id="gCE-bx-txh"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="3810.5" y="1151.5"/>

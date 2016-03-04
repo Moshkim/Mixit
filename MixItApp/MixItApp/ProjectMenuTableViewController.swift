@@ -51,6 +51,12 @@ class ProjectMenuTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        let row = indexPath.row
+        //print(projects[row].name)
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -95,11 +101,10 @@ class ProjectMenuTableViewController: UITableViewController {
         
         if segue.identifier == "ProjectInfoList" {
             let VC = segue.destinationViewController as UIViewController
-            //let indexPath: NSIndexPath = view.indexPathForSelectedRow!
-            VC.title = "Insert project title here"
+            let indexPath: NSIndexPath = tableView.indexPathForSelectedRow!
+            let row = indexPath.row
+            VC.title = projects[row].name
         }
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
 
 }
