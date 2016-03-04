@@ -12,7 +12,9 @@ import AVFoundation
 class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     // MARK: Initialization
-    
+    @IBOutlet weak var ratingControl: RatingControl!
+    @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var slider: UISlider!
     
     
     override func viewDidLoad() {
@@ -49,9 +51,7 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
     var player:AVAudioPlayer = AVAudioPlayer()
     
     
-    @IBOutlet weak var ratingControl: RatingControl!
-    @IBOutlet weak var photoImageView: UIImageView!
-    @IBOutlet weak var slider: UISlider!
+    
     
     @IBAction func sliderController(sender: UISlider) {
         player.volume = slider.value
@@ -93,6 +93,8 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
     
     @IBAction func selectImageFromPhotoLibrary(sender: UITapGestureRecognizer) {
         // UIImagePickerController is a view controller that lets a user pick media from their photo library.
+
+        
         let imagePickerController = UIImagePickerController()
         
         // Only allow photos to be picked, not taken.
