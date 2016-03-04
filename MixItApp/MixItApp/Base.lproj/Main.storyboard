@@ -98,7 +98,7 @@
                             </toolbar>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Qg-eX-cgn" customClass="RatingControl" customModule="MixItApp" customModuleProvider="target">
                                 <rect key="frame" x="67" y="101" width="240" height="44"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="WXX-GV-4ff">
                                 <rect key="frame" x="65" y="161" width="244" height="244"/>
