@@ -33,6 +33,7 @@ class MediaPlayerViewController: UIViewController {
         player.pause()
     }
     @IBOutlet weak var nameOfTrack: UILabel!
+    @IBOutlet weak var fileType: UILabel!
     @IBOutlet weak var trackDuration: UILabel!
     
     override func viewDidLoad() {
@@ -57,6 +58,7 @@ class MediaPlayerViewController: UIViewController {
         
         // Print info to screen
         nameOfTrack.text = s
+        fileType.text = ext
         let hours = String(Int(floor(duration / 3600)))
         let minutes = String(format:"%02d", Int(floor(duration / 60)))
         let seconds = String(format:"%02d", Int(floor(duration % 60)))

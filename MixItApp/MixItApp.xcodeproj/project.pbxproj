@@ -18,6 +18,12 @@
 		A6D315C71C7A78BD00B5EF9D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D315C61C7A78BD00B5EF9D /* AVFoundation.framework */; };
 		A6D315CB1C7A7C4400B5EF9D /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */; };
 		B2CD8B091C7EB6E6006C0470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2CD8B081C7EB6E6006C0470 /* LaunchScreen.storyboard */; };
+		B2D60BBD1C88E7610057F5E8 /* ProjectMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D60BBC1C88E7610057F5E8 /* ProjectMenuTableViewController.swift */; };
+		B2D60BBF1C88ED8D0057F5E8 /* ProjectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D60BBE1C88ED8D0057F5E8 /* ProjectList.swift */; };
+		B2D60BC11C88F0880057F5E8 /* SampleProjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D60BC01C88F0880057F5E8 /* SampleProjects.swift */; };
+		B2D60BC71C88FB430057F5E8 /* ProjectInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D60BC61C88FB430057F5E8 /* ProjectInfoViewController.swift */; };
+		B2D60BC91C89051D0057F5E8 /* SettingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D60BC81C89051D0057F5E8 /* SettingsList.swift */; };
+		B2D60BCD1C8906BB0057F5E8 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D60BCC1C8906BB0057F5E8 /* SettingsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,12 @@
 		A6D315C61C7A78BD00B5EF9D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerViewController.swift; sourceTree = "<group>"; };
 		B2CD8B081C7EB6E6006C0470 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B2D60BBC1C88E7610057F5E8 /* ProjectMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectMenuTableViewController.swift; sourceTree = "<group>"; };
+		B2D60BBE1C88ED8D0057F5E8 /* ProjectList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectList.swift; sourceTree = "<group>"; };
+		B2D60BC01C88F0880057F5E8 /* SampleProjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleProjects.swift; sourceTree = "<group>"; };
+		B2D60BC61C88FB430057F5E8 /* ProjectInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectInfoViewController.swift; path = ../../../.Trash/ProjectInfoViewController.swift; sourceTree = "<group>"; };
+		B2D60BC81C89051D0057F5E8 /* SettingsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsList.swift; sourceTree = "<group>"; };
+		B2D60BCC1C8906BB0057F5E8 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsTableViewController.swift; path = ../SettingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,17 +119,21 @@
 		A6D315941C7A786D00B5EF9D /* MixItApp */ = {
 			isa = PBXGroup;
 			children = (
-				A6A043A31C7D3A8300AA1EF0 /* testing.mp3 */,
 				A6D315951C7A786D00B5EF9D /* AppDelegate.swift */,
-				A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */,
-				A6D315971C7A786D00B5EF9D /* ViewController.swift */,
 				A6D3159F1C7A786D00B5EF9D /* Assets.xcassets */,
 				A6D315A41C7A786D00B5EF9D /* Info.plist */,
 				B2CD8B081C7EB6E6006C0470 /* LaunchScreen.storyboard */,
 				A6D315991C7A786D00B5EF9D /* Main.storyboard */,
+				A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */,
 				A6D3159C1C7A786D00B5EF9D /* MixItApp.xcdatamodeld */,
-				A6D315971C7A786D00B5EF9D /* ViewController.swift */,
 				312FC0870DBC0EF4F946EC49 /* Music */,
+				B2D60BC61C88FB430057F5E8 /* ProjectInfoViewController.swift */,
+				B2D60BBE1C88ED8D0057F5E8 /* ProjectList.swift */,
+				B2D60BC81C89051D0057F5E8 /* SettingsList.swift */,
+				B2D60BBC1C88E7610057F5E8 /* ProjectMenuTableViewController.swift */,
+				B2D60BCC1C8906BB0057F5E8 /* SettingsTableViewController.swift */,
+				B2D60BC01C88F0880057F5E8 /* SampleProjects.swift */,
+				A6D315971C7A786D00B5EF9D /* ViewController.swift */,
 			);
 			path = MixItApp;
 			sourceTree = "<group>";
@@ -248,8 +264,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6D315A01C7A786D00B5EF9D /* Assets.xcassets in Resources */,
-				A6A043A41C7D3A8300AA1EF0 /* testing.mp3 in Resources */,
-				A6D315CF1C7A7E0100B5EF9D /* Background in Resources */,
 				B2CD8B091C7EB6E6006C0470 /* LaunchScreen.storyboard in Resources */,
 				A6D3159B1C7A786D00B5EF9D /* Main.storyboard in Resources */,
 				312FCDD427514A34A8E33623 /* Music in Resources */,
@@ -277,10 +291,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2D60BBD1C88E7610057F5E8 /* ProjectMenuTableViewController.swift in Sources */,
 				A6D3159E1C7A786D00B5EF9D /* MixItApp.xcdatamodeld in Sources */,
 				A6D315981C7A786D00B5EF9D /* ViewController.swift in Sources */,
 				A6D315CB1C7A7C4400B5EF9D /* MediaPlayerViewController.swift in Sources */,
+				B2D60BC71C88FB430057F5E8 /* ProjectInfoViewController.swift in Sources */,
+				B2D60BC91C89051D0057F5E8 /* SettingsList.swift in Sources */,
+				B2D60BCD1C8906BB0057F5E8 /* SettingsTableViewController.swift in Sources */,
 				A6D315961C7A786D00B5EF9D /* AppDelegate.swift in Sources */,
+				B2D60BC11C88F0880057F5E8 /* SampleProjects.swift in Sources */,
+				B2D60BBF1C88ED8D0057F5E8 /* ProjectList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
