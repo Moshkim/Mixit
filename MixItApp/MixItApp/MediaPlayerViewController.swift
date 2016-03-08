@@ -15,6 +15,9 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
     @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var nameOfTrack: UILabel!
+    @IBOutlet weak var fileType: UILabel!
+    @IBOutlet weak var trackDuration: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
