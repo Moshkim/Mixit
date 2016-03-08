@@ -9,32 +9,12 @@
 import UIKit
 import AVFoundation
 
-class MediaPlayerViewController: UIViewController {
+class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    var player:AVAudioPlayer = AVAudioPlayer()
-    
-    
+    // MARK: Initialization
+    @IBOutlet weak var ratingControl: RatingControl!
+    @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var slider: UISlider!
-    
-    @IBAction func sliderController(sender: UISlider) {
-        player.volume = slider.value
-        // print(player.currentTime)    // may be useful when we implement sliders and stuff
-    }
-    
-    @IBAction func stopButton(sender: UIBarButtonItem) {
-        player.stop()
-    }
-    
-    @IBAction func playButton(sender: UIBarButtonItem) {
-        player.play()
-    }
-    
-    @IBAction func pauseButton(sender: UIBarButtonItem) {
-        player.pause()
-    }
-    @IBOutlet weak var nameOfTrack: UILabel!
-    @IBOutlet weak var fileType: UILabel!
-    @IBOutlet weak var trackDuration: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,7 +55,7 @@ class MediaPlayerViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-//        print(self.navigationItem.title!)
+        //        print(self.navigationItem.title!)
         let file = self.navigationItem.title!
         let s = self.navigationItem.title!.substringToIndex(self.navigationItem.title!.endIndex.advancedBy(-4))
         let ext = file.substringWithRange(Range<String.Index>(start: file.endIndex.advancedBy(-4), end: file.endIndex))
@@ -90,14 +70,65 @@ class MediaPlayerViewController: UIViewController {
         }
     }
     
-    /*
-    // MARK: - Navigation
     
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
+    var player:AVAudioPlayer = AVAudioPlayer()
+    
+    
+    
+    
+    @IBAction func sliderController(sender: UISlider) {
+        player.volume = slider.value
     }
-    */
+    
+    @IBAction func stopButton(sender: UIBarButtonItem) {
+        player.stop()
+    }
+    
+    @IBAction func playButton(sender: UIBarButtonItem) {
+        player.play()
+    }
+    
+    @IBAction func pauseButton(sender: UIBarButtonItem) {
+        player.pause()
+    }
+    
+    
+    
+    // MARK: UIImagePickerControllerDelegate
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        // Dismiss the picker if the user canceled.
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        // The info iinctionary contains multiple representations of the image, and this uses the original.
+        let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        // Set photoImageView to display the selected image.
+        photoImageView.image = selectedImage
+        
+        // Dismiss the picker.
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    // MARK: Actions
+    
+    
+    @IBAction func selectImageFromPhotoLibrary(sender: UITapGestureRecognizer) {
+        // UIImagePickerController is a view controller that lets a user pick media from their photo library.
+
+        
+        let imagePickerController = UIImagePickerController()
+        
+        // Only allow photos to be picked, not taken.
+        imagePickerController.sourceType = .PhotoLibrary
+        
+        // Make sure ViewController is notified when the user picks an image.
+        imagePickerController.delegate = self
+        
+        presentViewController(imagePickerController, animated: true, completion: nil)
+        
+    }
+    
     
 }
