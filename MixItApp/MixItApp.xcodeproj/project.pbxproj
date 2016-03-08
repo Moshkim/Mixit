@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		312FCDD427514A34A8E33623 /* Music in Resources */ = {isa = PBXBuildFile; fileRef = 312FC0870DBC0EF4F946EC49 /* Music */; };
-		A6C6111E1C897A8000F82F6E /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6111D1C897A8000F82F6E /* RatingControl.swift */; };
 		A6D315961C7A786D00B5EF9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315951C7A786D00B5EF9D /* AppDelegate.swift */; };
 		A6D315981C7A786D00B5EF9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315971C7A786D00B5EF9D /* ViewController.swift */; };
 		A6D3159B1C7A786D00B5EF9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D315991C7A786D00B5EF9D /* Main.storyboard */; };
@@ -46,7 +45,6 @@
 
 /* Begin PBXFileReference section */
 		312FC0870DBC0EF4F946EC49 /* Music */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Music; sourceTree = "<group>"; };
-		A6C6111D1C897A8000F82F6E /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		A6D315921C7A786D00B5EF9D /* MixItApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixItApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D315951C7A786D00B5EF9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D315971C7A786D00B5EF9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				A6D315951C7A786D00B5EF9D /* AppDelegate.swift */,
-				A6C6111D1C897A8000F82F6E /* RatingControl.swift */,
 				A6D3159F1C7A786D00B5EF9D /* Assets.xcassets */,
 				A6D315A41C7A786D00B5EF9D /* Info.plist */,
 				B2CD8B081C7EB6E6006C0470 /* LaunchScreen.storyboard */,
@@ -298,7 +295,6 @@
 				A6D3159E1C7A786D00B5EF9D /* MixItApp.xcdatamodeld in Sources */,
 				A6D315981C7A786D00B5EF9D /* ViewController.swift in Sources */,
 				A6D315CB1C7A7C4400B5EF9D /* MediaPlayerViewController.swift in Sources */,
-				A6C6111E1C897A8000F82F6E /* RatingControl.swift in Sources */,
 				B2D60BC71C88FB430057F5E8 /* ProjectInfoViewController.swift in Sources */,
 				B2D60BC91C89051D0057F5E8 /* SettingsList.swift in Sources */,
 				B2D60BCD1C8906BB0057F5E8 /* SettingsTableViewController.swift in Sources */,
