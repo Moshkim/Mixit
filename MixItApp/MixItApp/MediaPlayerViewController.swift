@@ -15,13 +15,40 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
     @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var slider: UISlider!
-    
+    @IBOutlet weak var nameOfTrack: UILabel!
+    @IBOutlet weak var fileType: UILabel!
+    @IBOutlet weak var trackDuration: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let file = self.navigationItem.title!
+        let s = self.navigationItem.title!.substringToIndex(self.navigationItem.title!.endIndex.advancedBy(-4))
+        let ext = file.substringWithRange(Range<String.Index>(start: file.endIndex.advancedBy(-4), end: file.endIndex))
+        let path = NSBundle.mainBundle().pathForResource(s, ofType: ext, inDirectory: "/Music")
+        let filelocation = NSString(string: path!)
+        player = try! AVAudioPlayer(contentsOfURL: NSURL(string: filelocation as String)!, fileTypeHint: AVFileTypeMPEGLayer3)
+        
+        // Get duration of current sound track in seconds
+        var duration: NSTimeInterval {
+            get {
+                if let nameOfPlayer:AVAudioPlayer? = player {
+                    return nameOfPlayer!.duration
+                }
+                return 0
+            }
+        }
+        
+        // Print info to screen
+        nameOfTrack.text = s
+        fileType.text = ext
+        let hours = String(Int(floor(duration / 3600)))
+        let minutes = String(format:"%02d", Int(floor((duration / 60) % 60)))
+        let seconds = String(format:"%02d", Int(floor(duration % 60)))
+        trackDuration.text = hours + ":" + minutes + ":" + seconds
+        
         //self.definesPresentationContext = true
         //self.tabBarController?.tabBar.hidden = true
-        
         // Do any additional setup after loading the view
     }
     
@@ -44,7 +71,6 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
         } catch let error as NSError {
             print("AV Sound Error: \(error.localizedDescription)")
         }
-        
     }
     
     
