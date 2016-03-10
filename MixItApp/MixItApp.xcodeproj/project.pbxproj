@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		312FCDD427514A34A8E33623 /* Music in Resources */ = {isa = PBXBuildFile; fileRef = 312FC0870DBC0EF4F946EC49 /* Music */; };
+		A6C6111E1C897A8000F82F6E /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6111D1C897A8000F82F6E /* RatingControl.swift */; };
 		A6D315961C7A786D00B5EF9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315951C7A786D00B5EF9D /* AppDelegate.swift */; };
-		A6D315981C7A786D00B5EF9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315971C7A786D00B5EF9D /* ViewController.swift */; };
 		A6D3159B1C7A786D00B5EF9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D315991C7A786D00B5EF9D /* Main.storyboard */; };
 		A6D3159E1C7A786D00B5EF9D /* MixItApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6D3159C1C7A786D00B5EF9D /* MixItApp.xcdatamodeld */; };
 		A6D315A01C7A786D00B5EF9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6D3159F1C7A786D00B5EF9D /* Assets.xcassets */; };
@@ -18,6 +18,18 @@
 		A6D315C71C7A78BD00B5EF9D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D315C61C7A78BD00B5EF9D /* AVFoundation.framework */; };
 		A6D315CB1C7A7C4400B5EF9D /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */; };
 		B2CD8B091C7EB6E6006C0470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2CD8B081C7EB6E6006C0470 /* LaunchScreen.storyboard */; };
+		CDC12B671C8FC15A00F668CD /* AMTSoundPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC12B5D1C8FC15A00F668CD /* AMTSoundPicker.swift */; };
+		CDC12B681C8FC15A00F668CD /* AMTTrackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC12B5E1C8FC15A00F668CD /* AMTTrackManager.swift */; };
+		CDC12B691C8FC15A00F668CD /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC12B5F1C8FC15A00F668CD /* Common.swift */; };
+		CDC12B6A1C8FC15A00F668CD /* IVMAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC12B601C8FC15A00F668CD /* IVMAlertController.swift */; };
+		CDC12B6C1C8FC15A00F668CD /* ProjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC12B631C8FC15A00F668CD /* ProjectManager.swift */; };
+		CDC12B6D1C8FC15A00F668CD /* TSLibraryImport.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC12B651C8FC15A00F668CD /* TSLibraryImport.m */; };
+		CDC12B6E1C8FC15A00F668CD /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC12B661C8FC15A00F668CD /* Utility.swift */; };
+		CDC12B771C8FC16600F668CD /* DSActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC12B721C8FC16600F668CD /* DSActivityView.m */; };
+		CDC12B781C8FC16600F668CD /* OpenProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC12B731C8FC16600F668CD /* OpenProjectVC.swift */; };
+		CDC12B791C8FC16600F668CD /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC12B741C8FC16600F668CD /* TrackCell.swift */; };
+		CDC12B7B1C8FC16600F668CD /* TracksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC12B761C8FC16600F668CD /* TracksVC.swift */; };
+		CDC12B891C8FDE5C00F668CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC12B881C8FDE5C00F668CD /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +51,9 @@
 
 /* Begin PBXFileReference section */
 		312FC0870DBC0EF4F946EC49 /* Music */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Music; sourceTree = "<group>"; };
+		A6C6111D1C897A8000F82F6E /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		A6D315921C7A786D00B5EF9D /* MixItApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixItApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D315951C7A786D00B5EF9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A6D315971C7A786D00B5EF9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A6D3159A1C7A786D00B5EF9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6D3159D1C7A786D00B5EF9D /* MixItApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MixItApp.xcdatamodel; sourceTree = "<group>"; };
 		A6D3159F1C7A786D00B5EF9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,8 +65,24 @@
 		A6D315B81C7A786D00B5EF9D /* MixItAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixItAppUITests.swift; sourceTree = "<group>"; };
 		A6D315BA1C7A786D00B5EF9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6D315C61C7A78BD00B5EF9D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerViewController.swift; sourceTree = "<group>"; };
+		A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MediaPlayerViewController.swift; path = ../MediaPlayerViewController.swift; sourceTree = "<group>"; };
 		B2CD8B081C7EB6E6006C0470 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDC12B5D1C8FC15A00F668CD /* AMTSoundPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMTSoundPicker.swift; sourceTree = "<group>"; };
+		CDC12B5E1C8FC15A00F668CD /* AMTTrackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMTTrackManager.swift; sourceTree = "<group>"; };
+		CDC12B5F1C8FC15A00F668CD /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		CDC12B601C8FC15A00F668CD /* IVMAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IVMAlertController.swift; sourceTree = "<group>"; };
+		CDC12B631C8FC15A00F668CD /* ProjectManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectManager.swift; sourceTree = "<group>"; };
+		CDC12B641C8FC15A00F668CD /* TSLibraryImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSLibraryImport.h; sourceTree = "<group>"; };
+		CDC12B651C8FC15A00F668CD /* TSLibraryImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSLibraryImport.m; sourceTree = "<group>"; };
+		CDC12B661C8FC15A00F668CD /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		CDC12B701C8FC16600F668CD /* Aacmultitrack-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Aacmultitrack-Bridging-Header.h"; sourceTree = "<group>"; };
+		CDC12B711C8FC16600F668CD /* DSActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSActivityView.h; sourceTree = "<group>"; };
+		CDC12B721C8FC16600F668CD /* DSActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSActivityView.m; sourceTree = "<group>"; };
+		CDC12B731C8FC16600F668CD /* OpenProjectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenProjectVC.swift; sourceTree = "<group>"; };
+		CDC12B741C8FC16600F668CD /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		CDC12B761C8FC16600F668CD /* TracksVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracksVC.swift; sourceTree = "<group>"; };
+		CDC12B871C8FC8D400F668CD /* MixItApp.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixItApp.pch; sourceTree = "<group>"; };
+		CDC12B881C8FDE5C00F668CD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,16 +135,17 @@
 		A6D315941C7A786D00B5EF9D /* MixItApp */ = {
 			isa = PBXGroup;
 			children = (
-				A6A043A31C7D3A8300AA1EF0 /* testing.mp3 */,
+				CDC12B5C1C8FC15A00F668CD /* Common */,
+				CDC12B6F1C8FC16600F668CD /* UserInterfaces */,
+				CDC12B7F1C8FC3A000F668CD /* Supporting Files */,
+				CDC12B881C8FDE5C00F668CD /* ViewController.swift */,
 				A6D315951C7A786D00B5EF9D /* AppDelegate.swift */,
-				A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */,
-				A6D315971C7A786D00B5EF9D /* ViewController.swift */,
+				A6C6111D1C897A8000F82F6E /* RatingControl.swift */,
 				A6D3159F1C7A786D00B5EF9D /* Assets.xcassets */,
 				A6D315A41C7A786D00B5EF9D /* Info.plist */,
 				B2CD8B081C7EB6E6006C0470 /* LaunchScreen.storyboard */,
 				A6D315991C7A786D00B5EF9D /* Main.storyboard */,
 				A6D3159C1C7A786D00B5EF9D /* MixItApp.xcdatamodeld */,
-				A6D315971C7A786D00B5EF9D /* ViewController.swift */,
 				312FC0870DBC0EF4F946EC49 /* Music */,
 			);
 			path = MixItApp;
@@ -138,6 +167,43 @@
 				A6D315BA1C7A786D00B5EF9D /* Info.plist */,
 			);
 			path = MixItAppUITests;
+			sourceTree = "<group>";
+		};
+		CDC12B5C1C8FC15A00F668CD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CDC12B5D1C8FC15A00F668CD /* AMTSoundPicker.swift */,
+				CDC12B5E1C8FC15A00F668CD /* AMTTrackManager.swift */,
+				CDC12B5F1C8FC15A00F668CD /* Common.swift */,
+				CDC12B601C8FC15A00F668CD /* IVMAlertController.swift */,
+				CDC12B631C8FC15A00F668CD /* ProjectManager.swift */,
+				CDC12B641C8FC15A00F668CD /* TSLibraryImport.h */,
+				CDC12B651C8FC15A00F668CD /* TSLibraryImport.m */,
+				CDC12B661C8FC15A00F668CD /* Utility.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CDC12B6F1C8FC16600F668CD /* UserInterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				CDC12B701C8FC16600F668CD /* Aacmultitrack-Bridging-Header.h */,
+				CDC12B711C8FC16600F668CD /* DSActivityView.h */,
+				CDC12B721C8FC16600F668CD /* DSActivityView.m */,
+				A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */,
+				CDC12B731C8FC16600F668CD /* OpenProjectVC.swift */,
+				CDC12B741C8FC16600F668CD /* TrackCell.swift */,
+				CDC12B761C8FC16600F668CD /* TracksVC.swift */,
+			);
+			path = UserInterfaces;
+			sourceTree = "<group>";
+		};
+		CDC12B7F1C8FC3A000F668CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDC12B871C8FC8D400F668CD /* MixItApp.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,7 +274,7 @@
 				TargetAttributes = {
 					A6D315911C7A786D00B5EF9D = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = JB4K9XSBZ5;
+						DevelopmentTeam = 43ZUNE9D3V;
 					};
 					A6D315A81C7A786D00B5EF9D = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -248,8 +314,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6D315A01C7A786D00B5EF9D /* Assets.xcassets in Resources */,
-				A6A043A41C7D3A8300AA1EF0 /* testing.mp3 in Resources */,
-				A6D315CF1C7A7E0100B5EF9D /* Background in Resources */,
 				B2CD8B091C7EB6E6006C0470 /* LaunchScreen.storyboard in Resources */,
 				A6D3159B1C7A786D00B5EF9D /* Main.storyboard in Resources */,
 				312FCDD427514A34A8E33623 /* Music in Resources */,
@@ -277,10 +341,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDC12B691C8FC15A00F668CD /* Common.swift in Sources */,
+				CDC12B671C8FC15A00F668CD /* AMTSoundPicker.swift in Sources */,
 				A6D3159E1C7A786D00B5EF9D /* MixItApp.xcdatamodeld in Sources */,
-				A6D315981C7A786D00B5EF9D /* ViewController.swift in Sources */,
+				CDC12B7B1C8FC16600F668CD /* TracksVC.swift in Sources */,
+				CDC12B781C8FC16600F668CD /* OpenProjectVC.swift in Sources */,
 				A6D315CB1C7A7C4400B5EF9D /* MediaPlayerViewController.swift in Sources */,
+				CDC12B6A1C8FC15A00F668CD /* IVMAlertController.swift in Sources */,
+				A6C6111E1C897A8000F82F6E /* RatingControl.swift in Sources */,
+				CDC12B6E1C8FC15A00F668CD /* Utility.swift in Sources */,
+				CDC12B891C8FDE5C00F668CD /* ViewController.swift in Sources */,
+				CDC12B771C8FC16600F668CD /* DSActivityView.m in Sources */,
 				A6D315961C7A786D00B5EF9D /* AppDelegate.swift in Sources */,
+				CDC12B681C8FC15A00F668CD /* AMTTrackManager.swift in Sources */,
+				CDC12B6C1C8FC15A00F668CD /* ProjectManager.swift in Sources */,
+				CDC12B6D1C8FC15A00F668CD /* TSLibraryImport.m in Sources */,
+				CDC12B791C8FC16600F668CD /* TrackCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,10 +491,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = MixItApp/MixItApp.pch;
 				INFOPLIST_FILE = MixItApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.MixMusicProduction.MixItApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MixMusic.MixItApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MixItApp/UserInterfaces/Aacmultitrack-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -427,10 +508,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = MixItApp/MixItApp.pch;
 				INFOPLIST_FILE = MixItApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.MixMusicProduction.MixItApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MixMusic.MixItApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MixItApp/UserInterfaces/Aacmultitrack-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -438,10 +524,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MixItAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MixMusicProduction.MixItAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MixItAppTests/MixItAppTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MixItApp.app/MixItApp";
 			};
 			name = Debug;
@@ -450,10 +539,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MixItAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MixMusicProduction.MixItAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MixItAppTests/MixItAppTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MixItApp.app/MixItApp";
 			};
 			name = Release;
@@ -461,10 +552,13 @@
 		A6D315C41C7A786D00B5EF9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MixItAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MixMusicProduction.MixItAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MixItAppUITests/MixItAppUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_TARGET_NAME = MixItApp;
 				USES_XCTRUNNER = YES;
 			};
@@ -473,10 +567,12 @@
 		A6D315C51C7A786D00B5EF9D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MixItAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MixMusicProduction.MixItAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MixItAppUITests/MixItAppUITests-Bridging-Header.h";
 				TEST_TARGET_NAME = MixItApp;
 				USES_XCTRUNNER = YES;
 			};

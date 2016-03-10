@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MixItApp/UserInterfaces/TracksVC.swift"
+            timestampString = "479301133.392721"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "actionOpenProject(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MixItApp/UserInterfaces/TracksVC.swift"
+            timestampString = "479301133.392721"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "actionNewProject(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MixItApp/ViewController.swift"
+            timestampString = "479191124.457385"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MixItApp.ViewController.tableList.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITableView&gt;"
+                  moduleName = "MixItApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qianhui/Desktop/Mixit-master-2/MixItApp/MixItApp/ViewController.swift"
+                  timestampString = "479191558.925713"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MixItApp.ViewController.tableList.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITableView&gt;"
+                  moduleName = "MixItApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qianhui/Desktop/Mixit-master-2/MixItApp/MixItApp/ViewController.swift"
+                  timestampString = "479191558.926034"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MixItApp.ViewController.init (MixItApp.ViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; MixItApp.ViewController"
+                  moduleName = "MixItApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qianhui/Desktop/Mixit-master-2/MixItApp/MixItApp/ViewController.swift"
+                  timestampString = "479191558.926282"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "775">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MixItApp.ViewController.init (MixItApp.ViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;MixItApp.ViewController&gt;"
+                  moduleName = "MixItApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qianhui/Desktop/Mixit-master-2/MixItApp/MixItApp/ViewController.swift"
+                  timestampString = "479191558.926549"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "661">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MixItApp/UserInterfaces/TracksVC.swift"
+            timestampString = "479191465.693049"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3"
+            endingLineNumber = "3"
+            landmarkName = "TracksVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MixItApp.TracksVC.__deallocating_deinit"
+                  moduleName = "MixItApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qianhui/Desktop/Mixit-master-2/MixItApp/MixItApp/UserInterfaces/TracksVC.swift"
+                  timestampString = "479191558.929673"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MixItApp.TracksVC.init (MixItApp.TracksVC.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;MixItApp.TracksVC&gt;"
+                  moduleName = "MixItApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qianhui/Desktop/Mixit-master-2/MixItApp/MixItApp/UserInterfaces/TracksVC.swift"
+                  timestampString = "479191558.930102"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "5"
+                  endingLineNumber = "5"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
