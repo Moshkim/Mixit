@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[FileSpliter openInputFile:]:FileSpliter.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "EINVAL">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MediaPlayerViewController.splitFile(UIButton) -&gt; ():MediaPlayerViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "-[FileSpliter openOutputFile:streamIndex:]:FileSpliter.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[FileSpliter openOutputFiles:streamIndex:]:FileSpliter.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[FileSpliter splitFile]:FileSpliter.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "frame">
+            </PersistentString>
+            <PersistentString
+               value = "nchannels">
+            </PersistentString>
+            <PersistentString
+               value = "c">
+            </PersistentString>
+            <PersistentString
+               value = "type">
+            </PersistentString>
+            <PersistentString
+               value = "frame_copy">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

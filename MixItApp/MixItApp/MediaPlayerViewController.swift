@@ -19,6 +19,9 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
     var strTitle = ""
     
     var player:AVAudioPlayer = AVAudioPlayer()
+    
+    @IBOutlet weak var spliter:FileSpliter!;
+    
     @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var fastForwardRewind: UISlider!
@@ -107,8 +110,18 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
     }
     
     @IBAction func playButton(sender: UIButton) {
+        
         player.play()
     }
+    
+    @IBAction func splitFile(sender: UIButton) {
+        
+        let url = player.url?.absoluteString
+        let s = FileSpliter(URL: url)
+        s.splitFile();
+
+    }
+
     
     @IBAction func stopButton(sender: UIButton) {
         player.stop()
