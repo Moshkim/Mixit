@@ -8,7 +8,10 @@
 
 import UIKit
 import CoreData
+import Foundation
 
+let iOSVersion = UIDevice.currentDevice().systemVersion
+let GENERATING_VIDEO_CANCELLED  = "video_generation_cancelled"
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate{
     

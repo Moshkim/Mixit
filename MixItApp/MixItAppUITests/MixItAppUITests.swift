@@ -1,10 +1,7 @@
 //
 //  MixItAppUITests.swift
 //  MixItAppUITests
-//
-//  Created by KWANIL KIM on 2/21/16.
-//  Copyright © 2016 MixMusicProduction. All rights reserved.
-//
+
 
 import XCTest
 

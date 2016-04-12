@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     let fileManager = NSFileManager.defaultManager()
     let musicPath = NSBundle.mainBundle().pathForResource("2", ofType: "jpg")
-
+    
     var songLists = [String]()
     
     @IBOutlet weak var tableList: UITableView!
@@ -28,7 +28,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             songLists.append(item)
         }
         super.viewDidLoad()
-        title = "Media picker..."
+      /*  title = "Media picker..."
         
         buttonPickAndPlay = UIButton(type: .System)
         
@@ -52,7 +52,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 action: "stopPlayingAudio",
                 forControlEvents: .TouchUpInside)
             view.addSubview(stopPlaying)
-        }
+        }*/
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -62,7 +62,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-
+        
         if segue.identifier == "ListViewController" {
             let VC = segue.destinationViewController as UIViewController
             let indexPath: NSIndexPath = tableList.indexPathForSelectedRow!
@@ -72,7 +72,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-
+        
         return 1
     }
     
@@ -88,11 +88,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-
+        
         self.performSegueWithIdentifier("ListViewController", sender: tableView)
     }
     
-    var myMusicPlayer: MPMusicPlayerController?
+   /* var myMusicPlayer: MPMusicPlayerController?
     var buttonPickAndPlay: UIButton?
     var buttonStopPlaying: UIButton?
     var mediaPicker: MPMediaPickerController?
@@ -238,9 +238,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             print("Could not instantiate a media picker")
         }
         
-    }
+    }*/
     
     
     
 }
-
