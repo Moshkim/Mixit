@@ -59,6 +59,7 @@
 		6288FB1D1CAC8BA50083B611 /* FileSpliter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileSpliter.h; path = FFMpegDecoder/FileSpliter.h; sourceTree = "<group>"; };
 		6288FB1E1CAC8BA50083B611 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utilities.h; path = FFMpegDecoder/Utilities.h; sourceTree = "<group>"; };
 		6288FB1F1CAC8BA50083B611 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utilities.m; path = FFMpegDecoder/Utilities.m; sourceTree = "<group>"; };
+		6288FB231CAC98A60083B611 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		6288FB251CAC98B20083B611 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		6288FB631CACFD4B0083B611 /* FileSpliter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FileSpliter-Bridging-Header.h"; sourceTree = "<group>"; };
 		A6C6111D1C897A8000F82F6E /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
@@ -139,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				6288FB251CAC98B20083B611 /* AudioToolbox.framework */,
+				6288FB231CAC98A60083B611 /* CoreMedia.framework */,
 				6288FB1A1CAC8B870083B611 /* FFMpegDecoder */,
 				A6D315C61C7A78BD00B5EF9D /* AVFoundation.framework */,
 				A6D315941C7A786D00B5EF9D /* MixItApp */,

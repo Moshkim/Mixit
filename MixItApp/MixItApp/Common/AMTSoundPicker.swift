@@ -13,6 +13,7 @@ let amtTrackManager = Common.amtTrackManager()
 protocol AMTSoundPickerDelegate {
     func addAudio(track: AMTTrack)
 }
+
 class AMTSoundPicker: NSObject, MPMediaPickerControllerDelegate {
     var parentVC: UIViewController?
     var delegate : AMTSoundPickerDelegate?
@@ -39,7 +40,21 @@ class AMTSoundPicker: NSObject, MPMediaPickerControllerDelegate {
         parentVC.presentViewController(soundPicker, animated: true, completion: { _ in })
     }
     
+    func addSong(strOutpath: AnyObject, trackName: String) -> Void {
+        DSBezelActivityView.removeViewAnimated(true)
+        let track: AMTTrack = AMTTrack()
+        track.trackName = trackName
+        track.audioURL = strOutpath as? NSURL
+        track.trackVolume = 1.0
+        amtTrackManager.arrTracks?.append(track)
+        
+        if self.delegate != nil {
+            self.delegate?.addAudio(track)
+        }
+    }
+    
     func mediaPicker(mediaPicker: MPMediaPickerController, didPickMediaItems mediaItemCollection: MPMediaItemCollection) {
+        
         let item = mediaItemCollection.items[0]
         let assetURL = item.assetURL
         let assetTitle = item.title
@@ -53,17 +68,28 @@ class AMTSoundPicker: NSObject, MPMediaPickerControllerDelegate {
                 amtTrackManager.currentProjectName = ProjectManager.newProject().lastPathComponent
             }
             let outputURL: NSURL = Common.getClipAudioPath(assetURL, project: amtTrackManager.currentProjectName, trackName: trackName)!
-            utility.exportAudioAtURL(assetURL!, outputURL: outputURL, completionBlock: {(strOutpath: AnyObject) -> Void in
-                DSBezelActivityView.removeViewAnimated(true)
-                let track: AMTTrack = AMTTrack()
-                track.trackName = trackName
-                track.audioURL = strOutpath as? NSURL
-                track.trackVolume = 1.0
-                amtTrackManager.arrTracks?.append(track)
-                if self.delegate != nil {
-                    self.delegate?.addAudio(track)
-                }
-                }, WithFailure: {(errorStr: String) -> Void in
+            utility.exportAudioAtURL(assetURL!, outputURL: outputURL,
+                completionBlock: {(strOutpath: AnyObject) -> Void in
+                    self.addSong(strOutpath, trackName: trackName)
+                    
+                    ///
+                    //
+                    // create separate file for each channel and import them
+                    //
+                    
+                    let ch = utility.splitFile(strOutpath.absoluteString)
+                    
+                    for i in 0...(ch-1) {
+                        var channelFilePath =  strOutpath.absoluteString.stringByReplacingOccurrencesOfString(".m4a", withString: "_" + String(i) + ".m4a") // TODO: refactor to getChannelFileURL or sth like that
+                        channelFilePath =  channelFilePath.stringByReplacingOccurrencesOfString("file://", withString:  "") // TODO: refactor to getChannelFileURL or sth like that
+
+                        channelFilePath = channelFilePath.stringByRemovingPercentEncoding!
+                        self.addSong(NSURL(fileURLWithPath:channelFilePath), trackName: "ch " + String(i) + ": " + trackName)
+                        
+                    }
+                    
+                },
+                WithFailure: {(errorStr: String) -> Void in
                     DSBezelActivityView.removeViewAnimated(true)
             })
             parentVC!.dismissViewControllerAnimated(true, completion: { _ in })
@@ -78,4 +104,3 @@ class AMTSoundPicker: NSObject, MPMediaPickerControllerDelegate {
         parentVC!.dismissViewControllerAnimated(true, completion: { _ in })
     }
 }
-

@@ -20,7 +20,6 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
     
     var player:AVAudioPlayer = AVAudioPlayer()
     
-    @IBOutlet weak var spliter:FileSpliter!;
     
     @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var photoImageView: UIImageView!
@@ -55,6 +54,7 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
             player.play()
             */
             /*player = try AVAudioPlayer(contentsOfURL: NSURL(string: filelocation as String)!, fileTypeHint: AVFileTypeMPEGLayer3)
+            
             player.play()*/
             player = try AVAudioPlayer(contentsOfURL: NSURL(string: self.audioURL as String)!, fileTypeHint: AVFileTypeMPEGLayer3)
             player.play()
@@ -114,13 +114,7 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
         player.play()
     }
     
-    @IBAction func splitFile(sender: UIButton) {
-        
-        let url = player.url?.absoluteString
-        let s = FileSpliter(URL: url)
-        s.splitFile();
 
-    }
 
     
     @IBAction func stopButton(sender: UIButton) {

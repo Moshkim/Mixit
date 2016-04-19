@@ -4,15 +4,24 @@
 
 import Foundation
 
-
 class Utility: NSObject {
+    
+    @IBOutlet weak var spliter:FileSpliter!;
+
+    func splitFile(url: String!) -> Int {
+        
+        let s = FileSpliter(URL: url)
+        return Int(s.splitFile());
+        
+    }
+    
     func exportAudioAtURL(assetURL: NSURL, outputURL outURL: NSURL, completionBlock: (strExportedURL: AnyObject) -> Void, WithFailure failure: (errorStr: String) -> Void) {
         if NSFileManager.defaultManager().fileExistsAtPath(outURL.path!) {
             do {
                 try NSFileManager.defaultManager().removeItemAtURL(outURL)
             }
             catch {
-                
+                NSLog("removeItemAtURL failed %s", outURL);
             }
             
         }
