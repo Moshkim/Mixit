@@ -20,6 +20,7 @@
 		A6D315B91C7A786D00B5EF9D /* MixItAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315B81C7A786D00B5EF9D /* MixItAppUITests.swift */; };
 		A6D315C71C7A78BD00B5EF9D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D315C61C7A78BD00B5EF9D /* AVFoundation.framework */; };
 		A6D315CB1C7A7C4400B5EF9D /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */; };
+		B2CAE0CB1CBD92CB00A1B784 /* VolumeSliders.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CAE0CA1CBD92CB00A1B784 /* VolumeSliders.swift */; };
 		B2CD8B091C7EB6E6006C0470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2CD8B081C7EB6E6006C0470 /* LaunchScreen.storyboard */; };
 		CDC12B671C8FC15A00F668CD /* AMTSoundPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC12B5D1C8FC15A00F668CD /* AMTSoundPicker.swift */; };
 		CDC12B681C8FC15A00F668CD /* AMTTrackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC12B5E1C8FC15A00F668CD /* AMTTrackManager.swift */; };
@@ -77,6 +78,7 @@
 		A6D315BA1C7A786D00B5EF9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6D315C61C7A78BD00B5EF9D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MediaPlayerViewController.swift; path = ../MediaPlayerViewController.swift; sourceTree = "<group>"; };
+		B2CAE0CA1CBD92CB00A1B784 /* VolumeSliders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeSliders.swift; sourceTree = "<group>"; };
 		B2CD8B081C7EB6E6006C0470 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDC12B5D1C8FC15A00F668CD /* AMTSoundPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMTSoundPicker.swift; sourceTree = "<group>"; };
 		CDC12B5E1C8FC15A00F668CD /* AMTTrackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMTTrackManager.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				A6D315991C7A786D00B5EF9D /* Main.storyboard */,
 				A6D3159C1C7A786D00B5EF9D /* MixItApp.xcdatamodeld */,
 				312FC0870DBC0EF4F946EC49 /* Music */,
+				B2CAE0CA1CBD92CB00A1B784 /* VolumeSliders.swift */,
 			);
 			path = MixItApp;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				CDC12B771C8FC16600F668CD /* DSActivityView.m in Sources */,
 				A6D315961C7A786D00B5EF9D /* AppDelegate.swift in Sources */,
 				CDC12B681C8FC15A00F668CD /* AMTTrackManager.swift in Sources */,
+				B2CAE0CB1CBD92CB00A1B784 /* VolumeSliders.swift in Sources */,
 				CDC12B6C1C8FC15A00F668CD /* ProjectManager.swift in Sources */,
 				CDC12B6D1C8FC15A00F668CD /* TSLibraryImport.m in Sources */,
 				CDC12B791C8FC16600F668CD /* TrackCell.swift in Sources */,
