@@ -23,9 +23,9 @@ class VolumeSliders: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.scrollView.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.height)
-        let scrollViewWidth = self.scrollView.frame.width
-        let scrollViewHeight = self.scrollView.frame.height
+        self.scrollView.frame = CGRectMake(0, 0, self.view.frame.width, 0)
+        //let scrollViewWidth = self.scrollView.frame.width
+        //let scrollViewHeight = self.scrollView.frame.height
         
 
         //scrollView = UIScrollView(frame: view.bounds)
