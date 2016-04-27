@@ -44,8 +44,8 @@ class VolumeSliders: UIViewController {
                 //func CGRectMake(_ x: CGFloat, _ y: CGFloat, _ width: CGFloat, _ height: CGFloat) -> CGRect
                 slider[i] = UISlider(frame:CGRectMake(CGFloat(i)*50.0, 0, 167, 190))
                 slider[i].maximumValueImage = UIImage(named: "settings-32")
-            } else {
-                slider[i] = UISlider(frame:CGRectMake(CGFloat(i-1)*50.0, 225, 167, 190))
+            } else {    // y coord was 225
+                slider[i] = UISlider(frame:CGRectMake(CGFloat(i-1)*50.0, 175, 167, 190))
                 slider[i].maximumValueImage = UIImage(named: "settings-32")
             }
             slider[i].minimumValue = 0
@@ -59,7 +59,8 @@ class VolumeSliders: UIViewController {
             
         }
         
-        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.width*5, self.scrollView.frame.height)
+        self.scrollView.contentSize = CGSizeMake(ceil(CGFloat(sliderCount/2+1))*100, self.scrollView.frame.height)
+        //self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.width*5, self.scrollView.frame.height)
         
         /*
         slider[0] = UISlider(frame:CGRectMake(20, 260, 167, 178))
