@@ -15,7 +15,7 @@ var scrollView: UIScrollView!
 
 var sliderlabel = UILabel()
 let maxSliders = 40
-var sliderCount = 40    // number of sliders created
+var sliderCount = 19    // number of sliders created
 
 class VolumeSliders: UIViewController {
 
@@ -33,20 +33,26 @@ class VolumeSliders: UIViewController {
         //view.addSubview(scrollView)
         // Code to add sliders for adjusting volume
         var slider = [UISlider!](count: maxSliders, repeatedValue: nil)
+        var label = [UILabel!](count: maxSliders, repeatedValue: nil)
         
         if sliderCount > 40 {
             sliderCount = 40
         }
         
-        for i in 0...sliderCount-1 {
+        // default number of sliders to create is 7
+        for i in 0...6 {
             print("Creating slider \(i)")
             if i % 2 == 0 {
                 //func CGRectMake(_ x: CGFloat, _ y: CGFloat, _ width: CGFloat, _ height: CGFloat) -> CGRect
-                slider[i] = UISlider(frame:CGRectMake(CGFloat(i)*50.0, 0, 167, 190))
-                slider[i].maximumValueImage = UIImage(named: "settings-32")
+                slider[i] = UISlider(frame:CGRectMake(CGFloat(i)*70.0, 0, 167, 190))
+                label[i] = UILabel(frame: CGRectMake(CGFloat(i)*70.0+50, 0, 167, 190))
+                label[i].text = String(i+1)
+                //slider[i].maximumValueImage = UIImage(named: "settings-32")
             } else {    // y coord was 225
-                slider[i] = UISlider(frame:CGRectMake(CGFloat(i-1)*50.0, 175, 167, 190))
-                slider[i].maximumValueImage = UIImage(named: "settings-32")
+                slider[i] = UISlider(frame:CGRectMake(CGFloat(i-1)*70.0, 175, 167, 190))
+                label[i] = UILabel(frame: CGRectMake(CGFloat(i-1)*70.0+50, 175, 167, 190))
+                label[i].text = String(i+1)
+                //slider[i].maximumValueImage = UIImage(named: "settings-32")
             }
             slider[i].minimumValue = 0
             slider[i].maximumValue = 100
@@ -56,10 +62,43 @@ class VolumeSliders: UIViewController {
             slider[i].transform = CGAffineTransformMakeRotation(CGFloat(-M_PI/2))
             
             self.scrollView.addSubview(slider[i])
+            self.scrollView.addSubview(label[i])
             
         }
         
-        self.scrollView.contentSize = CGSizeMake(ceil(CGFloat(sliderCount/2+1))*100, self.scrollView.frame.height)
+        // after 7 sliders are created, check to see if more sliders are needed.
+        if sliderCount > 7 {
+            for i in 7...sliderCount-1 {
+                print("Creating slider \(i)")
+                if i % 2 == 0 {
+                    //func CGRectMake(_ x: CGFloat, _ y: CGFloat, _ width: CGFloat, _ height: CGFloat) -> CGRect
+                    slider[i] = UISlider(frame:CGRectMake(CGFloat(i)*70.0, 0, 167, 190))
+                    label[i] = UILabel(frame: CGRectMake(CGFloat(i)*70.0+50, 0, 167, 190))
+                    label[i].text = String(i+1)
+                    //slider[i].maximumValueImage = UIImage(named: "settings-32")
+                } else {    // y coord was 225
+                    slider[i] = UISlider(frame:CGRectMake(CGFloat(i-1)*70.0, 175, 167, 190))
+                    label[i] = UILabel(frame: CGRectMake(CGFloat(i-1)*70.0+50, 175, 167, 190))
+                    label[i].text = String(i+1)
+                //slider[i].maximumValueImage = UIImage(named: "settings-32")
+                }
+                slider[i].minimumValue = 0
+                slider[i].maximumValue = 100
+                slider[i].continuous = true
+                slider[i].value = 50
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange(_:)), forControlEvents: .ValueChanged)
+                slider[i].transform = CGAffineTransformMakeRotation(CGFloat(-M_PI/2))
+            
+                self.scrollView.addSubview(slider[i])
+                self.scrollView.addSubview(label[i])
+            
+            }
+        }
+        if(sliderCount % 2 != 0) {
+            self.scrollView.contentSize = CGSizeMake(ceil(CGFloat((sliderCount+1)/2+1))*135, self.scrollView.frame.height)
+        } else {
+            self.scrollView.contentSize = CGSizeMake(ceil(CGFloat(sliderCount/2+1))*135, self.scrollView.frame.height)
+        }
         //self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.width*5, self.scrollView.frame.height)
         
         /*
