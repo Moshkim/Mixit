@@ -15,7 +15,7 @@ var scrollView: UIScrollView!
 
 var sliderlabel = UILabel()
 let maxSliders = 40
-var sliderCount = 19    // number of sliders created
+var sliderCount = 40    // number of sliders created
 
 class VolumeSliders: UIViewController {
 
@@ -23,13 +23,17 @@ class VolumeSliders: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // for debugging purposes
         let width = UIScreen.mainScreen().bounds.width
         print("Width: \(width)")
         let height = UIScreen.mainScreen().bounds.height
         print("Height: \(height)")
         
-        
-        self.scrollView.frame = CGRectMake(0, 0, self.view.frame.width, 0)
+        // Create a scrollView that will hold all of the sliders.
+        // This does not include the toolbar on the bottom of the same screen.
+        self.scrollView.frame = CGRectMake(0, 0, self.view.frame.height, 0)  // was 0 0 self.view.frame.width 0
+        print("Testing \(self.view.frame.width)")
+        print("Testing2 \(self.view.frame.height)")
         //let scrollViewWidth = self.scrollView.frame.width
         //let scrollViewHeight = self.scrollView.frame.height
         
@@ -47,19 +51,22 @@ class VolumeSliders: UIViewController {
         
         // default number of sliders to create is 7
         for i in 0...6 {
-            print("Creating slider \(i)")
-            if i % 2 == 0 {
+            print("Creating slider: \(i)")
+            if i % 2 == 0 { // odd numbered slider
                 //func CGRectMake(_ x: CGFloat, _ y: CGFloat, _ width: CGFloat, _ height: CGFloat) -> CGRect
-                slider[i] = UISlider(frame:CGRectMake(CGFloat(i)*70.0, 0, 167, 190))
-                label[i] = UILabel(frame: CGRectMake(CGFloat(i)*70.0+50, 0, 167, 190))
+                // first parameter of CGRectMake is the offset of the slider which depends on the (i+1)th slider being created. the label requires adding a value to the offset so that the label is right next to the slider.
+                slider[i] = UISlider(frame:CGRectMake(20+CGFloat(i)*70.0, 0, (width/2)*0.7, 190))    // was 167 190
+                label[i] = UILabel(frame: CGRectMake(20+CGFloat(i)*70.0+20, 0, (width/2)*0.7, 190))
                 label[i].text = String(i+1)
                 //slider[i].maximumValueImage = UIImage(named: "settings-32")
-            } else {    // y coord was 225
-                slider[i] = UISlider(frame:CGRectMake(CGFloat(i-1)*70.0, 175, 167, 190))
-                label[i] = UILabel(frame: CGRectMake(CGFloat(i-1)*70.0+50, 175, 167, 190))
+            } else {    // even numbered slider
+                slider[i] = UISlider(frame:CGRectMake(20+CGFloat(i-1)*70.0, (width/2)*0.8, (width/2)*0.7, 190))
+                label[i] = UILabel(frame: CGRectMake(20+CGFloat(i-1)*70.0+20, (width/2)*0.8, (width/2)*0.7, 190))
                 label[i].text = String(i+1)
                 //slider[i].maximumValueImage = UIImage(named: "settings-32")
             }
+            
+            // may want to store this in a different Swift file
             slider[i].minimumValue = 0
             slider[i].maximumValue = 100
             slider[i].continuous = true
@@ -78,13 +85,13 @@ class VolumeSliders: UIViewController {
                 print("Creating slider \(i)")
                 if i % 2 == 0 {
                     //func CGRectMake(_ x: CGFloat, _ y: CGFloat, _ width: CGFloat, _ height: CGFloat) -> CGRect
-                    slider[i] = UISlider(frame:CGRectMake(CGFloat(i)*70.0, 0, 167, 190))
-                    label[i] = UILabel(frame: CGRectMake(CGFloat(i)*70.0+50, 0, 167, 190))
+                    slider[i] = UISlider(frame:CGRectMake(20+CGFloat(i)*70.0, 0, (width/2)*0.7, 190))
+                    label[i] = UILabel(frame: CGRectMake(20+CGFloat(i)*70.0+20, 0, (width/2)*0.7, 190))
                     label[i].text = String(i+1)
                     //slider[i].maximumValueImage = UIImage(named: "settings-32")
                 } else {    // y coord was 225
-                    slider[i] = UISlider(frame:CGRectMake(CGFloat(i-1)*70.0, 175, 167, 190))
-                    label[i] = UILabel(frame: CGRectMake(CGFloat(i-1)*70.0+50, 175, 167, 190))
+                    slider[i] = UISlider(frame:CGRectMake(20+CGFloat(i-1)*70.0, (width/2)*0.8, (width/2)*0.7, 190))
+                    label[i] = UILabel(frame: CGRectMake(20+CGFloat(i-1)*70.0+20, (width/2)*0.8, (width/2)*0.7, 190))
                     label[i].text = String(i+1)
                 //slider[i].maximumValueImage = UIImage(named: "settings-32")
                 }
@@ -100,6 +107,8 @@ class VolumeSliders: UIViewController {
             
             }
         }
+        
+        // set the size of the scrollview
         if(sliderCount % 2 != 0) {
             self.scrollView.contentSize = CGSizeMake(ceil(CGFloat((sliderCount+1)/2+1))*135, self.scrollView.frame.height)
         } else {
@@ -141,6 +150,7 @@ class VolumeSliders: UIViewController {
         return UIInterfaceOrientationMask.Landscape
     }
     
+    // Make sure the screen is in landscape view when this screen is reached.
     override func shouldAutorotate() -> Bool {
         return true
     }
