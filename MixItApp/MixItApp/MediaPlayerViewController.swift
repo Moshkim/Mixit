@@ -19,6 +19,8 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
     var strTitle = ""
     
     var player:AVAudioPlayer = AVAudioPlayer()
+    
+    
     @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var fastForwardRewind: UISlider!
@@ -52,6 +54,7 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
             player.play()
             */
             /*player = try AVAudioPlayer(contentsOfURL: NSURL(string: filelocation as String)!, fileTypeHint: AVFileTypeMPEGLayer3)
+            
             player.play()*/
             player = try AVAudioPlayer(contentsOfURL: NSURL(string: self.audioURL as String)!, fileTypeHint: AVFileTypeMPEGLayer3)
             player.play()
@@ -107,8 +110,12 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
     }
     
     @IBAction func playButton(sender: UIButton) {
+        
         player.play()
     }
+    
+
+
     
     @IBAction func stopButton(sender: UIButton) {
         player.stop()

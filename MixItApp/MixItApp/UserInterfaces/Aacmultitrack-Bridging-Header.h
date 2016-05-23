@@ -4,3 +4,5 @@
 
 #import "TSLibraryImport.h"
 #import "DSActivityView.h"
+
+#import "FileSpliter-Bridging-Header.h"

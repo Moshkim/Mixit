@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hqO-mK-qjc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hqO-mK-qjc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -379,7 +379,7 @@
                                     <constraint firstAttribute="width" constant="600" id="nWx-lZ-zOD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -429,6 +429,40 @@
             </objects>
             <point key="canvasLocation" x="475" y="3606"/>
         </scene>
+        <!--Volume Sliders-->
+        <scene sceneID="Itt-9O-LEp">
+            <objects>
+                <viewController id="DXf-2G-kch" customClass="VolumeSliders" customModule="MixItApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n1y-vw-Ehs"/>
+                        <viewControllerLayoutGuide type="bottom" id="iTq-E2-4pA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KTN-gP-pzc">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHv-5R-4Gf">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iTq-E2-4pA" firstAttribute="top" secondItem="vHv-5R-4Gf" secondAttribute="bottom" id="4mv-oy-Mwe"/>
+                            <constraint firstItem="vHv-5R-4Gf" firstAttribute="top" secondItem="KTN-gP-pzc" secondAttribute="top" id="65y-EO-cNF"/>
+                            <constraint firstItem="vHv-5R-4Gf" firstAttribute="leading" secondItem="KTN-gP-pzc" secondAttribute="leading" id="CjC-s1-EvG"/>
+                            <constraint firstAttribute="trailing" secondItem="vHv-5R-4Gf" secondAttribute="trailing" id="HXf-Aq-2U9"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="scrollView" destination="vHv-5R-4Gf" id="rVD-kY-0BM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3la-D3-7Bl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1386.5" y="3606.5"/>
+        </scene>
         <!--Media Player View Controller-->
         <scene sceneID="mw6-Or-7mJ">
             <objects>
@@ -449,50 +483,6 @@
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="s2E-WD-JYm" secondAttribute="height" multiplier="60:11" id="Ieq-72-ySo"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aak-gQ-Kbf">
-                                <rect key="frame" x="0.0" y="482" width="375" height="128"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWd-or-AMW">
-                                        <rect key="frame" x="83" y="56" width="64" height="64"/>
-                                        <state key="normal" image="pauseButton"/>
-                                        <connections>
-                                            <action selector="pauseButton:" destination="d02-IL-r6m" eventType="touchUpInside" id="cQT-V4-5LL"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfE-lu-gcG">
-                                        <rect key="frame" x="155" y="56" width="64" height="64"/>
-                                        <state key="normal" image="playButton"/>
-                                        <connections>
-                                            <action selector="playButton:" destination="d02-IL-r6m" eventType="touchUpInside" id="vap-cW-pHa"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZX-oW-gdM">
-                                        <rect key="frame" x="227" y="56" width="64" height="64"/>
-                                        <state key="normal" image="stopButton"/>
-                                        <connections>
-                                            <action selector="stopButton:" destination="d02-IL-r6m" eventType="touchDown" id="rMv-Du-Pwl"/>
-                                        </connections>
-                                    </button>
-                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="djt-jD-cq5">
-                                        <rect key="frame" x="63" y="13" width="248" height="31"/>
-                                        <connections>
-                                            <action selector="sildeValue:" destination="d02-IL-r6m" eventType="valueChanged" id="QQJ-s1-3Rd"/>
-                                        </connections>
-                                    </slider>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rewindButton" translatesAutoresizingMaskIntoConstraints="NO" id="nUq-FK-IA8">
-                                        <rect key="frame" x="8" y="4" width="48" height="48"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fastForwardButton" translatesAutoresizingMaskIntoConstraints="NO" id="ooe-Yq-rFc">
-                                        <rect key="frame" x="317" y="4" width="48" height="48"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="musicIcon" translatesAutoresizingMaskIntoConstraints="NO" id="dy8-wu-ECz">
-                                        <rect key="frame" x="0.0" y="77" width="43" height="43"/>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="mCQ-FN-Xbu"/>
                                 </constraints>
                             </view>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="OMW-XK-pqc">
@@ -527,6 +517,47 @@
                                     <action selector="actionBack:" destination="d02-IL-r6m" eventType="touchUpInside" id="Zwe-ly-bx3"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aak-gQ-Kbf">
+                                <rect key="frame" x="0.0" y="482" width="375" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWd-or-AMW">
+                                        <rect key="frame" x="79" y="51" width="64" height="64"/>
+                                        <state key="normal" image="pauseButton"/>
+                                        <connections>
+                                            <action selector="pauseButton:" destination="d02-IL-r6m" eventType="touchUpInside" id="cQT-V4-5LL"/>
+                                        </connections>
+                                    </button>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="djt-jD-cq5">
+                                        <rect key="frame" x="63" y="13" width="248" height="31"/>
+                                        <connections>
+                                            <action selector="sildeValue:" destination="d02-IL-r6m" eventType="valueChanged" id="QQJ-s1-3Rd"/>
+                                        </connections>
+                                    </slider>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rewindButton" translatesAutoresizingMaskIntoConstraints="NO" id="nUq-FK-IA8">
+                                        <rect key="frame" x="8" y="4" width="48" height="48"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fastForwardButton" translatesAutoresizingMaskIntoConstraints="NO" id="ooe-Yq-rFc">
+                                        <rect key="frame" x="317" y="4" width="48" height="48"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="musicIcon" translatesAutoresizingMaskIntoConstraints="NO" id="dy8-wu-ECz">
+                                        <rect key="frame" x="0.0" y="77" width="43" height="43"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZX-oW-gdM">
+                                        <rect key="frame" x="233" y="51" width="64" height="64"/>
+                                        <state key="normal" image="stopButton"/>
+                                        <connections>
+                                            <action selector="stopButton:" destination="d02-IL-r6m" eventType="touchDown" id="rMv-Du-Pwl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfE-lu-gcG">
+                                        <rect key="frame" x="155" y="51" width="64" height="64"/>
+                                        <state key="normal" image="playButton"/>
+                                        <connections>
+                                            <action selector="playButton:" destination="d02-IL-r6m" eventType="touchUpInside" id="vap-cW-pHa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -616,7 +647,7 @@
                                                         <constraint firstAttribute="height" constant="24" id="VNV-aL-mJt"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="default">
                                                         <mask key="constraints">
@@ -782,7 +813,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Import Audio Tracks You can add more than 40 tracks." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzw-Vi-2Zp">
                                 <rect key="frame" x="20" y="20" width="560" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

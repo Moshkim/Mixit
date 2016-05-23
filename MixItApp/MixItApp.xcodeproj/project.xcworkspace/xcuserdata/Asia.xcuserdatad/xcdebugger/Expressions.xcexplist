@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "AMTSoundPicker.(mediaPicker(AMTSoundPicker) -&gt; (MPMediaPickerController, didPickMediaItems : MPMediaItemCollection) -&gt; ()).(closure #1):AMTSoundPicker.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MediaPlayerViewController.splitFile(UIButton) -&gt; ():MediaPlayerViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TracksVC.prepareForSegue(UIStoryboardSegue, sender : AnyObject?) -&gt; ():TracksVC.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MediaPlayerViewController.viewDidAppear(Bool) -&gt; ():MediaPlayerViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "player">
+            </PersistentString>
+            <PersistentString
+               value = "player.duration">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AMTSoundPicker.addSong(AnyObject, trackName : String) -&gt; ():AMTSoundPicker.swift">
+      </ContextState>
+      <ContextState
+         contextName = "-[FileSpliter openOutputFiles:streamIndex:]:FileSpliter.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[FileSpliter splitFile]:FileSpliter.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "frame">
+            </PersistentString>
+            <PersistentString
+               value = "nchannels">
+            </PersistentString>
+            <PersistentString
+               value = "c">
+            </PersistentString>
+            <PersistentString
+               value = "type">
+            </PersistentString>
+            <PersistentString
+               value = "frame_copy">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[FileSpliter openInputFile:]:FileSpliter.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "EINVAL">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[FileSpliter openOutputFile:streamIndex:]:FileSpliter.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

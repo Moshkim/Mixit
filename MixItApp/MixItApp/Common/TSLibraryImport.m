@@ -44,6 +44,7 @@
     if ([url.pathExtension compare:@"mp3"] != NSOrderedSame &&
         [url.pathExtension compare:@"aif"] != NSOrderedSame &&
         [url.pathExtension compare:@"m4a"] != NSOrderedSame &&
+        [url.pathExtension compare:@"mp4"] != NSOrderedSame &&
         [url.pathExtension compare:@"wav"] != NSOrderedSame) {
         return NO;
     }

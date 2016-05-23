@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		312FCDD427514A34A8E33623 /* Music in Resources */ = {isa = PBXBuildFile; fileRef = 312FC0870DBC0EF4F946EC49 /* Music */; };
+		6288FB211CAC8BA50083B611 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6288FB1F1CAC8BA50083B611 /* Utilities.m */; };
+		6288FB261CAC98B20083B611 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6288FB251CAC98B20083B611 /* AudioToolbox.framework */; };
+		6288FB611CACFC840083B611 /* FileSpliter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6288FB1B1CAC8BA50083B611 /* FileSpliter.m */; };
 		A6C6111E1C897A8000F82F6E /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6111D1C897A8000F82F6E /* RatingControl.swift */; };
 		A6D315961C7A786D00B5EF9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315951C7A786D00B5EF9D /* AppDelegate.swift */; };
 		A6D3159B1C7A786D00B5EF9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D315991C7A786D00B5EF9D /* Main.storyboard */; };
@@ -17,6 +20,7 @@
 		A6D315B91C7A786D00B5EF9D /* MixItAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315B81C7A786D00B5EF9D /* MixItAppUITests.swift */; };
 		A6D315C71C7A78BD00B5EF9D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D315C61C7A78BD00B5EF9D /* AVFoundation.framework */; };
 		A6D315CB1C7A7C4400B5EF9D /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */; };
+		B2CAE0CB1CBD92CB00A1B784 /* VolumeSliders.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CAE0CA1CBD92CB00A1B784 /* VolumeSliders.swift */; };
 		B2CD8B091C7EB6E6006C0470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2CD8B081C7EB6E6006C0470 /* LaunchScreen.storyboard */; };
 		CDC12B671C8FC15A00F668CD /* AMTSoundPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC12B5D1C8FC15A00F668CD /* AMTSoundPicker.swift */; };
 		CDC12B681C8FC15A00F668CD /* AMTTrackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC12B5E1C8FC15A00F668CD /* AMTTrackManager.swift */; };
@@ -51,6 +55,14 @@
 
 /* Begin PBXFileReference section */
 		312FC0870DBC0EF4F946EC49 /* Music */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Music; sourceTree = "<group>"; };
+		6288FB1B1CAC8BA50083B611 /* FileSpliter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileSpliter.m; path = FFMpegDecoder/FileSpliter.m; sourceTree = "<group>"; };
+		6288FB1C1CAC8BA50083B611 /* FileSpliterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileSpliterDelegate.h; path = FFMpegDecoder/FileSpliterDelegate.h; sourceTree = "<group>"; };
+		6288FB1D1CAC8BA50083B611 /* FileSpliter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileSpliter.h; path = FFMpegDecoder/FileSpliter.h; sourceTree = "<group>"; };
+		6288FB1E1CAC8BA50083B611 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utilities.h; path = FFMpegDecoder/Utilities.h; sourceTree = "<group>"; };
+		6288FB1F1CAC8BA50083B611 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utilities.m; path = FFMpegDecoder/Utilities.m; sourceTree = "<group>"; };
+		6288FB231CAC98A60083B611 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		6288FB251CAC98B20083B611 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6288FB631CACFD4B0083B611 /* FileSpliter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FileSpliter-Bridging-Header.h"; sourceTree = "<group>"; };
 		A6C6111D1C897A8000F82F6E /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		A6D315921C7A786D00B5EF9D /* MixItApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixItApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D315951C7A786D00B5EF9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +78,7 @@
 		A6D315BA1C7A786D00B5EF9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6D315C61C7A78BD00B5EF9D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MediaPlayerViewController.swift; path = ../MediaPlayerViewController.swift; sourceTree = "<group>"; };
+		B2CAE0CA1CBD92CB00A1B784 /* VolumeSliders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeSliders.swift; sourceTree = "<group>"; };
 		B2CD8B081C7EB6E6006C0470 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDC12B5D1C8FC15A00F668CD /* AMTSoundPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMTSoundPicker.swift; sourceTree = "<group>"; };
 		CDC12B5E1C8FC15A00F668CD /* AMTTrackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMTTrackManager.swift; sourceTree = "<group>"; };
@@ -90,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6288FB261CAC98B20083B611 /* AudioToolbox.framework in Frameworks */,
 				A6D315C71C7A78BD00B5EF9D /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,9 +125,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6288FB1A1CAC8B870083B611 /* FFMpegDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				6288FB1B1CAC8BA50083B611 /* FileSpliter.m */,
+				6288FB1C1CAC8BA50083B611 /* FileSpliterDelegate.h */,
+				6288FB1D1CAC8BA50083B611 /* FileSpliter.h */,
+				6288FB1E1CAC8BA50083B611 /* Utilities.h */,
+				6288FB1F1CAC8BA50083B611 /* Utilities.m */,
+				6288FB631CACFD4B0083B611 /* FileSpliter-Bridging-Header.h */,
+			);
+			name = FFMpegDecoder;
+			sourceTree = "<group>";
+		};
 		A6D315891C7A786D00B5EF9D = {
 			isa = PBXGroup;
 			children = (
+				6288FB251CAC98B20083B611 /* AudioToolbox.framework */,
+				6288FB231CAC98A60083B611 /* CoreMedia.framework */,
+				6288FB1A1CAC8B870083B611 /* FFMpegDecoder */,
 				A6D315C61C7A78BD00B5EF9D /* AVFoundation.framework */,
 				A6D315941C7A786D00B5EF9D /* MixItApp */,
 				A6D315AC1C7A786D00B5EF9D /* MixItAppTests */,
@@ -147,6 +177,7 @@
 				A6D315991C7A786D00B5EF9D /* Main.storyboard */,
 				A6D3159C1C7A786D00B5EF9D /* MixItApp.xcdatamodeld */,
 				312FC0870DBC0EF4F946EC49 /* Music */,
+				B2CAE0CA1CBD92CB00A1B784 /* VolumeSliders.swift */,
 			);
 			path = MixItApp;
 			sourceTree = "<group>";
@@ -341,6 +372,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6288FB611CACFC840083B611 /* FileSpliter.m in Sources */,
+				6288FB211CAC8BA50083B611 /* Utilities.m in Sources */,
 				CDC12B691C8FC15A00F668CD /* Common.swift in Sources */,
 				CDC12B671C8FC15A00F668CD /* AMTSoundPicker.swift in Sources */,
 				A6D3159E1C7A786D00B5EF9D /* MixItApp.xcdatamodeld in Sources */,
@@ -354,6 +387,7 @@
 				CDC12B771C8FC16600F668CD /* DSActivityView.m in Sources */,
 				A6D315961C7A786D00B5EF9D /* AppDelegate.swift in Sources */,
 				CDC12B681C8FC15A00F668CD /* AMTTrackManager.swift in Sources */,
+				B2CAE0CB1CBD92CB00A1B784 /* VolumeSliders.swift in Sources */,
 				CDC12B6C1C8FC15A00F668CD /* ProjectManager.swift in Sources */,
 				CDC12B6D1C8FC15A00F668CD /* TSLibraryImport.m in Sources */,
 				CDC12B791C8FC16600F668CD /* TrackCell.swift in Sources */,
@@ -492,10 +526,25 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = MixItApp/MixItApp.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/x264-iOS/include",
+					"$(SRCROOT)/FFMpegDecoder",
+					"$(SRCROOT)/FFMpegiOS/universal/include/**",
+				);
 				INFOPLIST_FILE = MixItApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFMpegiOS/arm64/lib",
+					"$(PROJECT_DIR)/x264-iOS/armv7s/lib",
+					"$(PROJECT_DIR)/x264-iOS/arm64/lib",
+					"$(PROJECT_DIR)/x264-iOS/armv7/lib",
+					"$(PROJECT_DIR)/FFMpegiOS/universal/lib",
+					"$(PROJECT_DIR)/x264-iOS/universal/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.MixMusic.MixItApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -509,10 +558,25 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = MixItApp/MixItApp.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/x264-iOS/include",
+					"$(SRCROOT)/FFMpegDecoder",
+					"$(SRCROOT)/FFMpegiOS/universal/include/**",
+				);
 				INFOPLIST_FILE = MixItApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFMpegiOS/arm64/lib",
+					"$(PROJECT_DIR)/x264-iOS/armv7s/lib",
+					"$(PROJECT_DIR)/x264-iOS/arm64/lib",
+					"$(PROJECT_DIR)/x264-iOS/armv7/lib",
+					"$(PROJECT_DIR)/FFMpegiOS/universal/lib",
+					"$(PROJECT_DIR)/x264-iOS/universal/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.MixMusic.MixItApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
