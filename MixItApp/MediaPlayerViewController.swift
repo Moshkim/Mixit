@@ -28,6 +28,7 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
     var albums = [AMTTrack]()
     var albumList = [AMTTrack]()
     var albumTitle = [String]()
+    var albumURL = [String]()
     var images: NSMutableArray = NSMutableArray()
     
     //var albums1: AMTTrack
@@ -55,7 +56,7 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
         super.viewDidLoad()
         images = NSMutableArray(array:["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg"])
         
-        carouselView.type = .CoverFlow2
+        carouselView.type = .TimeMachine
         carouselView.reloadData()
         
         RatingView.didTouchCosmos = didTouchCosmos
@@ -122,22 +123,58 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
 
     func carousel(carousel: iCarousel, didSelectItemAtIndex index: Int) {
         selectedIndex = index
-        self.performSegueWithIdentifier("ListViewController", sender: nil)
+        if player.play() {
+            do {
+                try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            } catch _ {
+            }
+            do {
+                try AVAudioSession.sharedInstance().setActive(true)
+            }catch _ {
+            }
+            
+            UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
+            //player.stop()
+            //player.prepareToPlay()
+            titleName.text = albums[selectedIndex].trackName!
+            player = try! AVAudioPlayer(contentsOfURL: albums[selectedIndex].audioURL!)
+            fastForwardRewind.maximumValue = Float(player.duration)
+            player.play()
+            //CosmosDefaultSettings.rating = 0
+            //player.delegate = self
+        }
+        else{
+            player = try! AVAudioPlayer(contentsOfURL: albums[selectedIndex].audioURL!)
+            fastForwardRewind.maximumValue = Float(player.duration)
+            player.play()
+            //CosmosDefaultSettings.rating = 0
+            
+        }
+        //self.performSegueWithIdentifier("ListViewController", sender: self)
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if(segue.identifier == "ListViewController"){
-            //albumList = albums as [String]!
-            //audioURL = albums[selectedIndex] as String
-            
-            do {
-                player = try AVAudioPlayer(contentsOfURL: NSURL(string: self.audioURL as String)!, fileTypeHint: AVFileTypeMPEGLayer3)
-        
-            }catch let error as NSError {
-                print("AV Sound Error: \(error.localizedDescription)")
-            }
-        }
-    }
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if(segue.identifier == "ListViewController"){
+//            //albumList = albums as [String]!
+//            //audioURL = albums[selectedIndex] as String
+//            //let newAlbum = NSIndexPath =
+//            let newAlbum = segue.destinationViewController as! MediaPlayerViewController
+//            newAlbum.audioURL = albums[selectedIndex].audioURL!.absoluteString
+//            newAlbum.strTitle = albums[selectedIndex].trackName!
+//            newProjectVC.audioURL = track.audioURL!.absoluteString
+//            newProjectVC.strTitle = track.trackName!
+//            newProjectVC.albums = amtTrackManager.arrTracks as! [AMTTrack]
+//            let urlString = albums[selectedIndex].audioURL!.absoluteString
+//            titleName.text = albums[selectedIndex].trackName
+//            
+//            do {
+//                player = try AVAudioPlayer(contentsOfURL: NSURL(string: urlString)!, fileTypeHint: AVFileTypeMPEGLayer3)
+//        
+//            }catch let error as NSError {
+//                print("AV Sound Error: \(error.localizedDescription)")
+//            }
+//        }
+//    }
     
 //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
 //        if(segue.identifier == "ListViewController"){
@@ -167,7 +204,7 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
         let Button = UIButton(frame: CGRect(x:0, y:0, width: 244, height: 244))
         
         
-        Button.setTitle("\(albums)", forState: .Normal)
+        Button.setTitle("\(albums[index].trackName)", forState: .Normal)
         Button.setTitleColor(UIColor.cyanColor(), forState: .Normal)
         mainView.image = UIImage(named: "\(images.objectAtIndex(index))")
         Button.backgroundColor = UIColor.clearColor()
@@ -177,10 +214,14 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
     
     func carousel(carousel: iCarousel, valueForOption option: iCarouselOption, withDefault value: CGFloat) -> CGFloat {
         if option == iCarouselOption.Spacing{
-            return value * 2.0
+            return value * 1.0
         }
         return value
     }
+    
+//    func carouselWillBeginScrollingAnimation(carousel: iCarousel) {
+//        <#code#>
+//    }
     
     
     override func didReceiveMemoryWarning() {

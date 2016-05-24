@@ -94,7 +94,7 @@ struct CosmosDefaultSettings {
     static let fillMode = StarFillMode.Half
     
     /// Rating value that is shown in the storyboard by default.
-    static let rating: Double = 0
+    static var rating: Double = 0
     
     /// Distance between stars.
     static let starMargin: Double = 5
