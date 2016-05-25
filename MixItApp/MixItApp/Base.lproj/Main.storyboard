@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DXf-2G-kch">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hqO-mK-qjc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -790,41 +790,13 @@
                                             <action selector="actionPlay:" destination="hqO-mK-qjc" eventType="touchUpInside" id="Grt-AO-L6k"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ge8-12-pfd">
-                                        <rect key="frame" x="475" y="25" width="100" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="7A5-7D-F1F"/>
-                                            <constraint firstAttribute="width" constant="100" id="Uca-qT-22L"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <state key="normal" title="Open Project"/>
-                                        <connections>
-                                            <action selector="actionOpenProject:" destination="hqO-mK-qjc" eventType="touchUpInside" id="cbv-Qy-yEa"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeI-ix-js4">
-                                        <rect key="frame" x="325" y="25" width="100" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="OvL-A6-Fy0"/>
-                                            <constraint firstAttribute="width" constant="100" id="fcq-9f-JfO"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <state key="normal" title="New Project"/>
-                                        <connections>
-                                            <action selector="actionNewProject:" destination="hqO-mK-qjc" eventType="touchUpInside" id="dwE-IB-Ju3"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="QeI-ix-js4" firstAttribute="centerY" secondItem="lDc-cK-gKT" secondAttribute="centerY" id="0W7-3I-ztD"/>
                                     <constraint firstItem="CNO-bI-VtU" firstAttribute="centerY" secondItem="lDc-cK-gKT" secondAttribute="centerY" id="6Ya-5v-roD"/>
-                                    <constraint firstItem="ge8-12-pfd" firstAttribute="centerY" secondItem="lDc-cK-gKT" secondAttribute="centerY" id="ARx-gr-Td8"/>
                                     <constraint firstItem="CNO-bI-VtU" firstAttribute="centerX" secondItem="lDc-cK-gKT" secondAttribute="centerX" multiplier="0.75" id="Ecy-cf-OpN"/>
                                     <constraint firstItem="orQ-A8-5SG" firstAttribute="centerX" secondItem="lDc-cK-gKT" secondAttribute="centerX" multiplier="0.25" id="FKW-a6-pYl"/>
                                     <constraint firstItem="orQ-A8-5SG" firstAttribute="centerY" secondItem="lDc-cK-gKT" secondAttribute="centerY" id="e80-tN-os6"/>
-                                    <constraint firstItem="ge8-12-pfd" firstAttribute="centerX" secondItem="lDc-cK-gKT" secondAttribute="centerX" multiplier="1.75" id="fxs-8K-QNZ"/>
-                                    <constraint firstItem="QeI-ix-js4" firstAttribute="centerX" secondItem="lDc-cK-gKT" secondAttribute="centerX" multiplier="1.25" id="t1w-KM-e7E"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Import Audio Tracks You can add more than 40 tracks." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzw-Vi-2Zp">
