@@ -429,40 +429,6 @@
             </objects>
             <point key="canvasLocation" x="475" y="3606"/>
         </scene>
-        <!--Volume Sliders-->
-        <scene sceneID="Itt-9O-LEp">
-            <objects>
-                <viewController id="DXf-2G-kch" customClass="VolumeSliders" customModule="MixItApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="n1y-vw-Ehs"/>
-                        <viewControllerLayoutGuide type="bottom" id="iTq-E2-4pA"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="KTN-gP-pzc">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHv-5R-4Gf">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="iTq-E2-4pA" firstAttribute="top" secondItem="vHv-5R-4Gf" secondAttribute="bottom" id="4mv-oy-Mwe"/>
-                            <constraint firstItem="vHv-5R-4Gf" firstAttribute="top" secondItem="KTN-gP-pzc" secondAttribute="top" id="65y-EO-cNF"/>
-                            <constraint firstItem="vHv-5R-4Gf" firstAttribute="leading" secondItem="KTN-gP-pzc" secondAttribute="leading" id="CjC-s1-EvG"/>
-                            <constraint firstAttribute="trailing" secondItem="vHv-5R-4Gf" secondAttribute="trailing" id="HXf-Aq-2U9"/>
-                        </constraints>
-                    </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="scrollView" destination="vHv-5R-4Gf" id="rVD-kY-0BM"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3la-D3-7Bl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1386.5" y="3606.5"/>
-        </scene>
         <!--Media Player View Controller-->
         <scene sceneID="mw6-Or-7mJ">
             <objects>
