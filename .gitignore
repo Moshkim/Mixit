@@ -1,4 +1,0 @@
-#This is git ignore file that ignore some of the unnecessary functions are called
-
-.DS_Store
-*.xcuserstate
