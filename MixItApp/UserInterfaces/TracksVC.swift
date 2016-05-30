@@ -2,7 +2,7 @@ import UIKit
 
 
 
-let kAppName = "Aacmultitrack"
+let kAppName = "MixIt"
 class TracksVC: UIViewController,AMTSoundPickerDelegate {
     
     var isSavedToGallery = false
@@ -141,7 +141,7 @@ class TracksVC: UIViewController,AMTSoundPickerDelegate {
     
     @IBAction func actionPlay(sender: UIButton) {
         if amtTrackManager.arrTracks!.count == 0 {
-            let alertController = IVMAlertController.initWithTitle(kAppName, Message: "Please add at least a audio track", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
+            let alertController = IVMAlertController.initWithTitle(kAppName, Message: "Please import an audio track.", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
             self.presentViewController(alertController, animated: true, completion: { _ in })
             return
         }
@@ -152,6 +152,18 @@ class TracksVC: UIViewController,AMTSoundPickerDelegate {
         else {
             sender.selected = true
             amtTrackManager.playComposition()
+        }
+    }
+    
+    @IBAction func actionSliders(sender: UIButton) {
+        if amtTrackManager.arrTracks!.count == 0 {
+            let alertController = IVMAlertController.initWithTitle(kAppName, Message: "Please import an audio track.", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
+            self.presentViewController(alertController, animated: true, completion: { _ in })
+            return
+        }
+        print(sender.selected)
+        if sender.selected {
+            print("Test")
         }
     }
     
@@ -186,7 +198,7 @@ class TracksVC: UIViewController,AMTSoundPickerDelegate {
     
     @IBAction func actionSaveToGallery(sender: AnyObject) {
         if amtTrackManager.arrTracks!.count == 0 {
-            let alertController = IVMAlertController.initWithTitle(kAppName, Message: "Please add at least a audio track", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
+            let alertController = IVMAlertController.initWithTitle(kAppName, Message: "Please import an audio track.", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
             self.presentViewController(alertController, animated: true, completion: { _ in })
             return
         }

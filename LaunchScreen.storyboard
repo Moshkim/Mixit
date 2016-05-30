@@ -28,19 +28,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="clipart-music-notes-11949848722015671592musical_note_nicu_bucule_01.svg.hi" highlightedImage="clipart-music-notes-11949848722015671592musical_note_nicu_bucule_01.svg.hi" translatesAutoresizingMaskIntoConstraints="NO" id="Flx-jB-4Qh">
-                                <rect key="frame" x="180" y="231" width="240" height="128"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="vvx-d1-lgP" secondAttribute="bottom" id="AED-4q-JHU"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Flx-jB-4Qh" secondAttribute="trailing" constant="160" id="CAU-3v-tSf"/>
                             <constraint firstItem="vvx-d1-lgP" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="L0O-On-td7"/>
                             <constraint firstAttribute="centerX" secondItem="GJd-Yh-RWb" secondAttribute="centerX" id="Q3B-4B-g5h"/>
-                            <constraint firstItem="Flx-jB-4Qh" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="160" id="X5c-7H-pca"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vvx-d1-lgP" secondAttribute="trailing" id="d2s-qD-rf4"/>
-                            <constraint firstItem="Flx-jB-4Qh" firstAttribute="top" secondItem="GJd-Yh-RWb" secondAttribute="bottom" constant="8" id="dXg-8P-Jsl"/>
                             <constraint firstItem="vvx-d1-lgP" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="hvg-eD-cQP"/>
                             <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="bottom" multiplier="1/3" constant="1" id="moa-c2-u7t"/>
                             <constraint firstItem="GJd-Yh-RWb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" symbolic="YES" id="x7j-FC-K8j"/>
@@ -53,7 +47,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="clipart-music-notes-11949848722015671592musical_note_nicu_bucule_01.svg.hi" width="468" height="594"/>
         <image name="gold" width="1925" height="1280"/>
     </resources>
 </document>

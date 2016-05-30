@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DXf-2G-kch">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hqO-mK-qjc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -102,7 +102,11 @@
                                     <constraint firstAttribute="width" secondItem="zO8-7K-Vxk" secondAttribute="height" multiplier="667:44" id="Y0s-4h-QuE"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem title="Back" id="2Fc-hF-1Hr"/>
+                                    <barButtonItem title="Back" id="2Fc-hF-1Hr">
+                                        <connections>
+                                            <action selector="actionBack:" destination="DXf-2G-kch" id="GuT-0y-U3I"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -442,7 +446,7 @@
                                             <constraint firstAttribute="height" constant="30" id="Tox-D8-2v1"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <state key="normal" title="Import Track"/>
+                                        <state key="normal" title="Import"/>
                                         <connections>
                                             <action selector="actionImportTrack:" destination="hqO-mK-qjc" eventType="touchUpInside" id="U13-3B-c1P"/>
                                         </connections>
@@ -462,6 +466,20 @@
                                         </state>
                                         <connections>
                                             <action selector="actionPlay:" destination="hqO-mK-qjc" eventType="touchUpInside" id="Grt-AO-L6k"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMk-bh-KOa">
+                                        <rect key="frame" x="487" y="25" width="40" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Other"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gU-bJ-lOg">
+                                        <rect key="frame" x="277" y="25" width="47" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Sliders"/>
+                                        <connections>
+                                            <action selector="actionSliders:" destination="hqO-mK-qjc" eventType="touchUpInside" id="TMe-ai-B60"/>
+                                            <segue destination="DXf-2G-kch" kind="presentation" id="vCn-nA-02x"/>
                                         </connections>
                                     </button>
                                 </subviews>
