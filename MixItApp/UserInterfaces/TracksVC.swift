@@ -96,7 +96,7 @@ class TracksVC: UIViewController,AMTSoundPickerDelegate {
     @IBAction func actionDeleteTrack(sender: AnyObject) {
         if (amtTrackManager.player != nil && amtTrackManager.player!.rate != 0 && amtTrackManager.player!.error == nil)
         || (amtTrackManager.trackPlayer != nil && amtTrackManager.trackPlayer!.playing) {
-            let alertViewController = IVMAlertController.initWithTitle("Error", Message: "Can not delete audio clip during playing", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
+            let alertViewController = IVMAlertController.initWithTitle("Error", Message: "Unable to delete audio clip during playing", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
             self.presentViewController(alertViewController, animated: true, completion: { _ in })
             return
         }
@@ -112,7 +112,7 @@ class TracksVC: UIViewController,AMTSoundPickerDelegate {
     
     @IBAction func actionPlayTrack(sender: AnyObject) {
         if amtTrackManager.player != nil && amtTrackManager.player!.rate != 0 && amtTrackManager.player!.error == nil {
-            let alertViewController = IVMAlertController.initWithTitle("Error", Message: "Can not play audio clip during playing", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
+            let alertViewController = IVMAlertController.initWithTitle("Error", Message: "Unable to play audio clip during playing", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
             self.presentViewController(alertViewController, animated: true, completion: { _ in })
             return
         }
@@ -132,7 +132,7 @@ class TracksVC: UIViewController,AMTSoundPickerDelegate {
     
     @IBAction func actionImportTrack(sender: AnyObject) {
         if amtTrackManager.player != nil && amtTrackManager.player?.rate != 0 && amtTrackManager.player?.error == nil {
-            let alertViewController = IVMAlertController.initWithTitle("Error", Message: "Can not import audio clip during playing", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
+            let alertViewController = IVMAlertController.initWithTitle("Error", Message: "Unable to import audio clip during playing", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
             self.presentViewController(alertViewController, animated: true, completion: { _ in })
             return
         }
@@ -157,14 +157,14 @@ class TracksVC: UIViewController,AMTSoundPickerDelegate {
     
     @IBAction func actionSliders(sender: UIButton) {
         if amtTrackManager.arrTracks!.count == 0 {
-            let alertController = IVMAlertController.initWithTitle(kAppName, Message: "Please import an audio track.", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
+            let alertController = IVMAlertController.initWithTitle(kAppName, Message: "Please import an audio track", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
             self.presentViewController(alertController, animated: true, completion: { _ in })
             return
         }
-        print(sender.selected)
-        if sender.selected {
-            print("Test")
-        }
+        //print(sender.selected)
+        //if sender.selected {
+            print("Test \(amtTrackManager.arrTracks!.count)")
+        //}
     }
     
     @IBAction func actionVolumeChanged(sender: UISlider) {
@@ -172,6 +172,7 @@ class TracksVC: UIViewController,AMTSoundPickerDelegate {
         let indexPath: NSIndexPath = tblTracks.indexPathForRowAtPoint(buttonPosition)!
         self.isSavedToGallery = false
         amtTrackManager.setTrackVolume(sender.value, index: indexPath.row)
+        print("Printing out volume: \(sender.value)")
     }
     
     @IBAction func actionOpenProject(sender: AnyObject) {
@@ -198,12 +199,12 @@ class TracksVC: UIViewController,AMTSoundPickerDelegate {
     
     @IBAction func actionSaveToGallery(sender: AnyObject) {
         if amtTrackManager.arrTracks!.count == 0 {
-            let alertController = IVMAlertController.initWithTitle(kAppName, Message: "Please import an audio track.", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
+            let alertController = IVMAlertController.initWithTitle(kAppName, Message: "Please import an audio track", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
             self.presentViewController(alertController, animated: true, completion: { _ in })
             return
         }
         if amtTrackManager.player!.rate != 0 && amtTrackManager.player!.error == nil {
-            let alertViewController = IVMAlertController.initWithTitle("Error", Message: "Can not save multitrack audio file during playing", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
+            let alertViewController = IVMAlertController.initWithTitle("Error", Message: "Unable to save multitrack audio file during playing", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
             self.presentViewController(alertViewController, animated: true, completion: { _ in })
             return
         }
