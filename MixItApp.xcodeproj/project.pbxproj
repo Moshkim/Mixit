@@ -46,7 +46,7 @@
 		A6D315B91C7A786D00B5EF9D /* MixItAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315B81C7A786D00B5EF9D /* MixItAppUITests.swift */; };
 		A6D315C71C7A78BD00B5EF9D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D315C61C7A78BD00B5EF9D /* AVFoundation.framework */; };
 		A6D315CB1C7A7C4400B5EF9D /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */; };
-		B2CA57941CFBB99100228ADB /* VolumeSliders.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CA57931CFBB99100228ADB /* VolumeSliders.swift */; };
+		B27CB75B1CFC097D0044210B /* VolumeSliders.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27CB75A1CFC097D0044210B /* VolumeSliders.swift */; };
 		B2CD8B091C7EB6E6006C0470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2CD8B081C7EB6E6006C0470 /* LaunchScreen.storyboard */; };
 		CDC12B671C8FC15A00F668CD /* AMTSoundPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC12B5D1C8FC15A00F668CD /* AMTSoundPicker.swift */; };
 		CDC12B681C8FC15A00F668CD /* AMTTrackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC12B5E1C8FC15A00F668CD /* AMTTrackManager.swift */; };
@@ -239,7 +239,7 @@
 		A6D315BA1C7A786D00B5EF9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6D315C61C7A78BD00B5EF9D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MediaPlayerViewController.swift; path = ../MediaPlayerViewController.swift; sourceTree = "<group>"; };
-		B2CA57931CFBB99100228ADB /* VolumeSliders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VolumeSliders.swift; path = ../../Desktop/VolumeSliders.swift; sourceTree = "<group>"; };
+		B27CB75A1CFC097D0044210B /* VolumeSliders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeSliders.swift; sourceTree = "<group>"; };
 		B2CD8B081C7EB6E6006C0470 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDC12B5D1C8FC15A00F668CD /* AMTSoundPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMTSoundPicker.swift; sourceTree = "<group>"; };
 		CDC12B5E1C8FC15A00F668CD /* AMTTrackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMTTrackManager.swift; sourceTree = "<group>"; };
@@ -615,7 +615,6 @@
 				A6D315A41C7A786D00B5EF9D /* Info.plist */,
 				B2CD8B081C7EB6E6006C0470 /* LaunchScreen.storyboard */,
 				A6D315991C7A786D00B5EF9D /* Main.storyboard */,
-				B2CA57931CFBB99100228ADB /* VolumeSliders.swift */,
 				A6D3159C1C7A786D00B5EF9D /* MixItApp.xcdatamodeld */,
 				312FC0870DBC0EF4F946EC49 /* Music */,
 			);
@@ -658,6 +657,7 @@
 		CDC12B6F1C8FC16600F668CD /* UserInterfaces */ = {
 			isa = PBXGroup;
 			children = (
+				B27CB75A1CFC097D0044210B /* VolumeSliders.swift */,
 				A65F0E581CEFE083000FA836 /* iCarousel.h */,
 				A65F0E591CEFE083000FA836 /* iCarousel.m */,
 				CDC12B701C8FC16600F668CD /* Aacmultitrack-Bridging-Header.h */,
@@ -834,7 +834,7 @@
 				CDC12B691C8FC15A00F668CD /* Common.swift in Sources */,
 				CDC12B671C8FC15A00F668CD /* AMTSoundPicker.swift in Sources */,
 				A6D3159E1C7A786D00B5EF9D /* MixItApp.xcdatamodeld in Sources */,
-				B2CA57941CFBB99100228ADB /* VolumeSliders.swift in Sources */,
+				B27CB75B1CFC097D0044210B /* VolumeSliders.swift in Sources */,
 				CDC12B7B1C8FC16600F668CD /* TracksVC.swift in Sources */,
 				CDC12B781C8FC16600F668CD /* OpenProjectVC.swift in Sources */,
 				A6D315CB1C7A7C4400B5EF9D /* MediaPlayerViewController.swift in Sources */,
