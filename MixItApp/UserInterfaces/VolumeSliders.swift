@@ -77,7 +77,87 @@ class VolumeSliders: UIViewController {
             slider[i].continuous = true
             slider[i].value = 1
             amtTrackManager.setTrackVolume(slider[i].value, index: i)
-            slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange(_:)), forControlEvents: .ValueChanged)
+            if(i == 0) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange0(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 1) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange1(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 2) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange2(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 3) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange3(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 4) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange4(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 5) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange5(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 6) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange6(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 7) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange7(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 8) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange8(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 9) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange9(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 10) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange10(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 11) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange11(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 12) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange12(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 13) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange13(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 14) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange14(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 15) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange15(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 16) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange16(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 17) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange17(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 18) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange18(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 19) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange19(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 20) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange20(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 21) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange21(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 22) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange22(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 23) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange23(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 24) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange24(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 25) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange25(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 26) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange26(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 27) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange27(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 28) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange28(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 29) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange29(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 30) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange30(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 31) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange31(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 32) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange32(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 33) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange33(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 34) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange34(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 35) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange35(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 36) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange36(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 37) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange37(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 38) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange38(_:)), forControlEvents: .ValueChanged)
+            } else if(i == 39) {
+                slider[i].addTarget(self, action: #selector(VolumeSliders.sliderValueDidChange39(_:)), forControlEvents: .ValueChanged)
+            }
             slider[i].transform = CGAffineTransformMakeRotation(CGFloat(-M_PI/2))
             
             self.scrollView.addSubview(slider[i])
@@ -176,16 +256,127 @@ class VolumeSliders: UIViewController {
      }
      */
     
-    func sliderValueDidChange(slider: UISlider) {
-        sliderlabel.text = String(slider.value)
-        print(sliderlabel.text)
-        print(slider.value)
-        print(slider)
-        NSLog("%p", slider)
-        print("Yep")
-        //print(sliderlabel)
-        //print(self)
+    
+    // Here are all of the sliderValueDidChange functions.
+    func sliderValueDidChange0(slider: UISlider) {
         amtTrackManager.setTrackVolume(slider.value, index: 0)
+    }
+    func sliderValueDidChange1(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 1)
+    }
+    func sliderValueDidChange2(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 2)
+    }
+    func sliderValueDidChange3(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 3)
+    }
+    func sliderValueDidChange4(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 4)
+    }
+    func sliderValueDidChange5(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 5)
+    }
+    func sliderValueDidChange6(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 6)
+    }
+    func sliderValueDidChange7(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 7)
+    }
+    func sliderValueDidChange8(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 8)
+    }
+    func sliderValueDidChange9(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 9)
+    }
+    func sliderValueDidChange10(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 10)
+    }
+    func sliderValueDidChange11(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 11)
+    }
+    func sliderValueDidChange12(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 12)
+    }
+    func sliderValueDidChange13(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 13)
+    }
+    func sliderValueDidChange14(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 14)
+    }
+    func sliderValueDidChange15(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 15)
+    }
+    func sliderValueDidChange16(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 16)
+    }
+    func sliderValueDidChange17(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 17)
+    }
+    func sliderValueDidChange18(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 18)
+    }
+    func sliderValueDidChange19(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 19)
+    }
+    func sliderValueDidChange20(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 20)
+    }
+    func sliderValueDidChange21(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 21)
+    }
+    func sliderValueDidChange22(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 22)
+    }
+    func sliderValueDidChange23(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 23)
+    }
+    func sliderValueDidChange24(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 24)
+    }
+    func sliderValueDidChange25(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 25)
+    }
+    func sliderValueDidChange26(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 26)
+    }
+    func sliderValueDidChange27(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 27)
+    }
+    func sliderValueDidChange28(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 28)
+    }
+    func sliderValueDidChange29(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 29)
+    }
+    func sliderValueDidChange30(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 30)
+    }
+    func sliderValueDidChange31(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 31)
+    }
+    func sliderValueDidChange32(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 32)
+    }
+    func sliderValueDidChange33(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 33)
+    }
+    func sliderValueDidChange34(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 34)
+    }
+    func sliderValueDidChange35(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 35)
+    }
+    func sliderValueDidChange36(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 36)
+    }
+    func sliderValueDidChange37(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 37)
+    }
+    func sliderValueDidChange38(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 38)
+    }
+    func sliderValueDidChange39(slider: UISlider) {
+        amtTrackManager.setTrackVolume(slider.value, index: 39)
     }
     
     
