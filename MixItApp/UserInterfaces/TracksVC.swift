@@ -34,6 +34,14 @@ class TracksVC: UIViewController,AMTSoundPickerDelegate {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        let numTracks = amtTrackManager.arrTracks!.count
+        
+        if(numTracks > 0) {
+            for i in 0...numTracks-1 {
+                amtTrackManager.setTrackVolume(1, index: i)
+            }
+        }
+ 
         tblTracks.reloadData()
     }
     
@@ -163,7 +171,7 @@ class TracksVC: UIViewController,AMTSoundPickerDelegate {
         }
         //print(sender.selected)
         //if sender.selected {
-            print("Test \(amtTrackManager.arrTracks!.count)")
+            //print("Test \(amtTrackManager.arrTracks!.count)")
         //}
     }
     
@@ -172,7 +180,7 @@ class TracksVC: UIViewController,AMTSoundPickerDelegate {
         let indexPath: NSIndexPath = tblTracks.indexPathForRowAtPoint(buttonPosition)!
         self.isSavedToGallery = false
         amtTrackManager.setTrackVolume(sender.value, index: indexPath.row)
-        print("Printing out volume: \(sender.value)")
+        //print("Printing out volume: \(sender.value)")
     }
     
     @IBAction func actionOpenProject(sender: AnyObject) {
