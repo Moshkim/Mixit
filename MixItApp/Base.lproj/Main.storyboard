@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Open ProjectVC-->
@@ -77,6 +76,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Glc-xv-0AE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="475" y="3606"/>
+        </scene>
+        <!--Volume Sliders-->
+        <scene sceneID="Itt-9O-LEp">
+            <objects>
+                <viewController id="DXf-2G-kch" customClass="VolumeSliders" customModule="MixItApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n1y-vw-Ehs"/>
+                        <viewControllerLayoutGuide type="bottom" id="iTq-E2-4pA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KTN-gP-pzc">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHv-5R-4Gf">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="331"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vHv-5R-4Gf" secondAttribute="height" multiplier="667:331" id="vhp-DR-5cX"/>
+                                </constraints>
+                            </scrollView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zO8-7K-Vxk">
+                                <rect key="frame" x="0.0" y="331" width="667" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zO8-7K-Vxk" secondAttribute="height" multiplier="667:44" id="Y0s-4h-QuE"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Back" id="2Fc-hF-1Hr">
+                                        <connections>
+                                            <action selector="actionBack:" destination="DXf-2G-kch" id="GuT-0y-U3I"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iTq-E2-4pA" firstAttribute="top" secondItem="zO8-7K-Vxk" secondAttribute="bottom" id="Aud-6i-gXZ"/>
+                            <constraint firstAttribute="trailing" secondItem="zO8-7K-Vxk" secondAttribute="trailing" id="Ez9-8Q-Nlf"/>
+                            <constraint firstAttribute="trailing" secondItem="vHv-5R-4Gf" secondAttribute="trailing" id="JHv-Zl-gBi"/>
+                            <constraint firstItem="zO8-7K-Vxk" firstAttribute="leading" secondItem="KTN-gP-pzc" secondAttribute="leading" id="Wz9-Qs-a4R"/>
+                            <constraint firstAttribute="bottom" secondItem="vHv-5R-4Gf" secondAttribute="bottom" constant="44" id="paJ-0u-oco"/>
+                            <constraint firstItem="vHv-5R-4Gf" firstAttribute="leading" secondItem="KTN-gP-pzc" secondAttribute="leading" id="vp8-52-sGj"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="scrollView" destination="vHv-5R-4Gf" id="rVD-kY-0BM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3la-D3-7Bl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1386.5" y="3606.5"/>
         </scene>
         <!--Data Source-->
         <scene sceneID="mw6-Or-7mJ">
@@ -283,7 +334,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5KI-UN-l52" id="yfY-H2-e4C">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EU6-bM-8E7">
@@ -384,23 +435,23 @@
                                     <outlet property="delegate" destination="hqO-mK-qjc" id="vgn-nK-IUn"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDc-cK-gKT" userLabel="View Button">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lDc-cK-gKT" userLabel="View Button">
                                 <rect key="frame" x="0.0" y="520" width="600" height="80"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orQ-A8-5SG">
-                                        <rect key="frame" x="25" y="25" width="100" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orQ-A8-5SG">
+                                        <rect key="frame" x="8" y="25" width="100" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="Dxe-XJ-EHt"/>
                                             <constraint firstAttribute="height" constant="30" id="Tox-D8-2v1"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <state key="normal" title="Import Track"/>
+                                        <state key="normal" title="Import"/>
                                         <connections>
                                             <action selector="actionImportTrack:" destination="hqO-mK-qjc" eventType="touchUpInside" id="U13-3B-c1P"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNO-bI-VtU">
-                                        <rect key="frame" x="175" y="25" width="100" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNO-bI-VtU">
+                                        <rect key="frame" x="116" y="25" width="100" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="8qo-Rl-q1I"/>
                                             <constraint firstAttribute="height" constant="30" id="jmu-4e-kL2"/>
@@ -416,42 +467,30 @@
                                             <action selector="actionPlay:" destination="hqO-mK-qjc" eventType="touchUpInside" id="Grt-AO-L6k"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ge8-12-pfd">
-                                        <rect key="frame" x="475" y="25" width="100" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gU-bJ-lOg">
+                                        <rect key="frame" x="224" y="25" width="100" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="7A5-7D-F1F"/>
-                                            <constraint firstAttribute="width" constant="100" id="Uca-qT-22L"/>
+                                            <constraint firstAttribute="height" constant="30" id="0D4-o9-SyF"/>
+                                            <constraint firstAttribute="width" constant="100" id="733-an-cju"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <state key="normal" title="Open Project"/>
+                                        <state key="normal" title="Sliders"/>
                                         <connections>
-                                            <action selector="actionOpenProject:" destination="hqO-mK-qjc" eventType="touchUpInside" id="cbv-Qy-yEa"/>
+                                            <action selector="actionSliders:" destination="hqO-mK-qjc" eventType="touchUpInside" id="TMe-ai-B60"/>
+                                            <segue destination="DXf-2G-kch" kind="show" id="vSi-q2-F6T"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeI-ix-js4">
-                                        <rect key="frame" x="325" y="25" width="100" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMk-bh-KOa">
+                                        <rect key="frame" x="332" y="25" width="100" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="OvL-A6-Fy0"/>
-                                            <constraint firstAttribute="width" constant="100" id="fcq-9f-JfO"/>
+                                            <constraint firstAttribute="width" constant="100" id="8ep-MQ-cM9"/>
+                                            <constraint firstAttribute="height" constant="30" id="Y1z-0z-ZCL"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <state key="normal" title="New Project"/>
-                                        <connections>
-                                            <action selector="actionNewProject:" destination="hqO-mK-qjc" eventType="touchUpInside" id="dwE-IB-Ju3"/>
-                                        </connections>
+                                        <state key="normal" title="Other"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="QeI-ix-js4" firstAttribute="centerY" secondItem="lDc-cK-gKT" secondAttribute="centerY" id="0W7-3I-ztD"/>
-                                    <constraint firstItem="CNO-bI-VtU" firstAttribute="centerY" secondItem="lDc-cK-gKT" secondAttribute="centerY" id="6Ya-5v-roD"/>
-                                    <constraint firstItem="ge8-12-pfd" firstAttribute="centerY" secondItem="lDc-cK-gKT" secondAttribute="centerY" id="ARx-gr-Td8"/>
-                                    <constraint firstItem="CNO-bI-VtU" firstAttribute="centerX" secondItem="lDc-cK-gKT" secondAttribute="centerX" multiplier="0.75" id="Ecy-cf-OpN"/>
-                                    <constraint firstItem="orQ-A8-5SG" firstAttribute="centerX" secondItem="lDc-cK-gKT" secondAttribute="centerX" multiplier="0.25" id="FKW-a6-pYl"/>
-                                    <constraint firstItem="orQ-A8-5SG" firstAttribute="centerY" secondItem="lDc-cK-gKT" secondAttribute="centerY" id="e80-tN-os6"/>
-                                    <constraint firstItem="ge8-12-pfd" firstAttribute="centerX" secondItem="lDc-cK-gKT" secondAttribute="centerX" multiplier="1.75" id="fxs-8K-QNZ"/>
-                                    <constraint firstItem="QeI-ix-js4" firstAttribute="centerX" secondItem="lDc-cK-gKT" secondAttribute="centerX" multiplier="1.25" id="t1w-KM-e7E"/>
-                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Import Audio Tracks You can add more than 40 tracks." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzw-Vi-2Zp">
                                 <rect key="frame" x="20" y="20" width="560" height="50"/>
@@ -463,12 +502,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gzw-Vi-2Zp" firstAttribute="top" secondItem="qJm-i8-N4d" secondAttribute="bottom" id="39Q-CZ-rwc"/>
-                            <constraint firstItem="lDc-cK-gKT" firstAttribute="leading" secondItem="Zd3-N6-lDR" secondAttribute="leadingMargin" constant="-20" id="5KU-cW-Ekw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gzw-Vi-2Zp" secondAttribute="trailing" id="7OX-et-nYl"/>
                             <constraint firstItem="gzw-Vi-2Zp" firstAttribute="leading" secondItem="Zd3-N6-lDR" secondAttribute="leadingMargin" id="Ec0-xo-1Tc"/>
                             <constraint firstItem="hh3-jb-TV9" firstAttribute="top" secondItem="gzw-Vi-2Zp" secondAttribute="bottom" id="FhU-pE-WPU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hh3-jb-TV9" secondAttribute="trailing" constant="-20" id="QBN-ui-7kR"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lDc-cK-gKT" secondAttribute="trailing" constant="-20" id="RHF-C3-51d"/>
                             <constraint firstItem="hh3-jb-TV9" firstAttribute="top" secondItem="qJm-i8-N4d" secondAttribute="bottom" constant="50" id="XRV-qB-F52"/>
                             <constraint firstItem="bVh-1w-uab" firstAttribute="top" secondItem="hh3-jb-TV9" secondAttribute="bottom" constant="80" id="YTE-ok-flB"/>
                             <constraint firstItem="bVh-1w-uab" firstAttribute="top" secondItem="lDc-cK-gKT" secondAttribute="bottom" id="lzT-rq-SWG"/>
