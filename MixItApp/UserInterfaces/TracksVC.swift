@@ -206,6 +206,8 @@ class TracksVC: UIViewController,AMTSoundPickerDelegate {
     }
     
     @IBAction func actionSaveToGallery(sender: AnyObject) {
+        amtTrackManager.playComposition()
+        amtTrackManager.pauseComposition()
         if amtTrackManager.arrTracks!.count == 0 {
             let alertController = IVMAlertController.initWithTitle(kAppName, Message: "Please import an audio track", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
             self.presentViewController(alertController, animated: true, completion: { _ in })
@@ -216,16 +218,18 @@ class TracksVC: UIViewController,AMTSoundPickerDelegate {
             self.presentViewController(alertViewController, animated: true, completion: { _ in })
             return
         }
+
+        
         DSBezelActivityView.newActivityViewForView(self.view!, withLabel: "Saving To Gallery", cancelTap: true)
         amtTrackManager.exportTracksToGallery({(outURL: NSURL) -> Void in
             dispatch_async(dispatch_get_main_queue(), {() -> Void in
                 DSBezelActivityView.removeViewAnimated(true)
-                let alertController: UIAlertController = IVMAlertController.initWithTitle("Error", Message: "Saving To Gallery Failed!", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
+                let alertController: UIAlertController = IVMAlertController.initWithTitle("Success", Message: "Mutitrack Audio Files saved to Gallery!", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
                 self.presentViewController(alertController, animated: true, completion: { _ in })
             })
             }, failure: {(errorStr: String) -> Void in
                 dispatch_async(dispatch_get_main_queue(), {() -> Void in
-                    let alertController: UIAlertController = IVMAlertController.initWithTitle("Success", Message: "Mutitrack Audio Files saved to Gallery!", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
+                    let alertController: UIAlertController = IVMAlertController.initWithTitle("Error", Message: "Saving To Gallery Failed!", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
                     self.presentViewController(alertController, animated: true, completion: { _ in })
                     DSBezelActivityView.removeViewAnimated(true)
                 })

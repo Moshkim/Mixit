@@ -60,6 +60,7 @@
 		CDC12B791C8FC16600F668CD /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC12B741C8FC16600F668CD /* TrackCell.swift */; };
 		CDC12B7B1C8FC16600F668CD /* TracksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC12B761C8FC16600F668CD /* TracksVC.swift */; };
 		CDC12B891C8FDE5C00F668CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC12B881C8FDE5C00F668CD /* ViewController.swift */; };
+		EC53393E1CFEE463008E2CC3 /* MergeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53393D1CFEE463008E2CC3 /* MergeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -257,6 +258,7 @@
 		CDC12B761C8FC16600F668CD /* TracksVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracksVC.swift; sourceTree = "<group>"; };
 		CDC12B871C8FC8D400F668CD /* MixItApp.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixItApp.pch; sourceTree = "<group>"; };
 		CDC12B881C8FDE5C00F668CD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC53393D1CFEE463008E2CC3 /* MergeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -666,6 +668,7 @@
 				CDC12B721C8FC16600F668CD /* DSActivityView.m */,
 				A6D315CA1C7A7C4400B5EF9D /* MediaPlayerViewController.swift */,
 				A6C6111D1C897A8000F82F6E /* RatingControl.swift */,
+				EC53393D1CFEE463008E2CC3 /* MergeVC.swift */,
 				A65F0E5D1CF15FE9000FA836 /* RatingAlbum.swift */,
 				A65F0E5F1CF16418000FA836 /* CosmosSettings.swift */,
 				CDC12B731C8FC16600F668CD /* OpenProjectVC.swift */,
@@ -751,7 +754,7 @@
 				TargetAttributes = {
 					A6D315911C7A786D00B5EF9D = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = NDEJM95FC2;
+						DevelopmentTeam = X32G89VDF5;
 					};
 					A6D315A81C7A786D00B5EF9D = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -837,6 +840,7 @@
 				B27CB75B1CFC097D0044210B /* VolumeSliders.swift in Sources */,
 				CDC12B7B1C8FC16600F668CD /* TracksVC.swift in Sources */,
 				CDC12B781C8FC16600F668CD /* OpenProjectVC.swift in Sources */,
+				EC53393E1CFEE463008E2CC3 /* MergeVC.swift in Sources */,
 				A6D315CB1C7A7C4400B5EF9D /* MediaPlayerViewController.swift in Sources */,
 				CDC12B6A1C8FC15A00F668CD /* IVMAlertController.swift in Sources */,
 				A6C6111E1C897A8000F82F6E /* RatingControl.swift in Sources */,

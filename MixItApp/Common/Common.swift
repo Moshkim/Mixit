@@ -39,9 +39,19 @@ class Common: NSObject {
      */
     
     class func getMultitrackAudioPath() -> NSURL {
+        print("getting path")
+        var count = 0
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
         let documentsDirectory: String = paths[0]
-        let audioFileOutput: NSURL = NSURL.fileURLWithPath((documentsDirectory as NSString).stringByAppendingPathComponent("multitrack.aac"))
+        var audioFileOutput: NSURL = NSURL.fileURLWithPath((documentsDirectory as NSString).stringByAppendingPathComponent("multitrack.m4a"))
+        if (NSFileManager.defaultManager().fileExistsAtPath(audioFileOutput.path!)) {
+            print("Here")
+            count += 1
+            var temp = audioFileOutput.absoluteString
+            var newString = "multitrack_" + String(count) + ".m4a"
+            audioFileOutput = NSURL.fileURLWithPath((documentsDirectory as NSString).stringByAppendingPathComponent(newString))
+            
+        }
         return audioFileOutput
     }
     /**
