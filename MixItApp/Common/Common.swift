@@ -43,7 +43,7 @@ class Common: NSObject {
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
         let documentsDirectory: String = paths[0]
         var audioFileOutput: NSURL = NSURL.fileURLWithPath((documentsDirectory as NSString).stringByAppendingPathComponent("multitrack.m4a"))
-        if (NSFileManager.defaultManager().fileExistsAtPath(audioFileOutput.path!)) {
+        while (NSFileManager.defaultManager().fileExistsAtPath(audioFileOutput.path!)) {
             count += 1
             var temp = audioFileOutput.absoluteString
             var newString = "multitrack_" + String(count) + ".m4a"
