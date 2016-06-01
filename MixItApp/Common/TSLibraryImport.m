@@ -127,6 +127,8 @@
         _exportSession.outputFileType = AVFileTypeWAVE;
     } else if ([[assetURL pathExtension] compare:@"aif"] == NSOrderedSame) {
         _exportSession.outputFileType = AVFileTypeAIFF;
+    } else if ([[assetURL pathExtension] compare:@"mp4"] == NSOrderedSame) {
+        _exportSession.outputFileType = AVFileTypeAppleM4A;
     } else {
         @throw [NSException exceptionWithName:NSInvalidArgumentException reason:@"unrecognized file extension" userInfo:nil];
     }

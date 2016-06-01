@@ -56,9 +56,9 @@ class MergeVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
-        let track: AMTTrack = AMTTrack()
+//        let track: AMTTrack = AMTTrack()
         let name = self.arrFiles[indexPath.row].substringToIndex(self.arrFiles[indexPath.row].endIndex.advancedBy(-4))
-        track.trackName = name
+//        track.trackName = name
         var urlPath = NSURL()
         let urls = try! NSFileManager.defaultManager().contentsOfDirectoryAtURL(documentsURL, includingPropertiesForKeys: nil, options: NSDirectoryEnumerationOptions())
         for item in urls {
@@ -67,10 +67,12 @@ class MergeVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
             }
         }
         
-        track.audioURL = urlPath
-        track.trackVolume = 1.0
-        amtTrackManager.arrTracks?.append(track)
+        AMTSoundPicker.sharedInstance().addSong(urlPath, trackName: name)
         
+//        track.audioURL = urlPath
+//        track.trackVolume = 1.0
+//        amtTrackManager.arrTracks?.append(track)
+//        
         self.dismissViewControllerAnimated(true, completion: { _ in })
         
 
