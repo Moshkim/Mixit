@@ -165,7 +165,7 @@ class TracksVC: UIViewController,AMTSoundPickerDelegate {
     
     @IBAction func actionSliders(sender: UIButton) {
         if amtTrackManager.arrTracks!.count == 0 {
-            let alertController = IVMAlertController.initWithTitle(kAppName, Message: "Please import an audio track", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
+            let alertController = IVMAlertController.initWithTitle(kAppName, Message: "Please import an audio track.", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
             self.presentViewController(alertController, animated: true, completion: { _ in })
             return
         }
@@ -209,7 +209,7 @@ class TracksVC: UIViewController,AMTSoundPickerDelegate {
         amtTrackManager.playComposition()
         amtTrackManager.pauseComposition()
         if amtTrackManager.arrTracks!.count == 0 {
-            let alertController = IVMAlertController.initWithTitle(kAppName, Message: "Please import an audio track", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
+            let alertController = IVMAlertController.initWithTitle(kAppName, Message: "Please import an audio track.", LeftButton: "OK", RightButton: nil, leftBlock: nil, RightBlock: nil)
             self.presentViewController(alertController, animated: true, completion: { _ in })
             return
         }
