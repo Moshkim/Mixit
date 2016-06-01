@@ -145,8 +145,14 @@
                                 <rect key="frame" x="0.0" y="91" width="375" height="576"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Previously Merged Files" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILE-qQ-eox">
+                                <rect key="frame" x="96" y="40" width="182" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnM-dL-Dho">
-                                <rect key="frame" x="31" y="40" width="34" height="30"/>
+                                <rect key="frame" x="26" y="36" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="actionBack:" destination="I4j-XT-nxd" eventType="touchUpInside" id="zWy-pl-Y1s"/>
@@ -491,7 +497,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNO-bI-VtU">
-                                        <rect key="frame" x="70" y="25" width="84" height="30"/>
+                                        <rect key="frame" x="68" y="25" width="84" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="8qo-Rl-q1I"/>
                                             <constraint firstAttribute="height" constant="30" id="jmu-4e-kL2"/>
@@ -508,7 +514,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMk-bh-KOa">
-                                        <rect key="frame" x="292" y="25" width="83" height="30"/>
+                                        <rect key="frame" x="290" y="25" width="83" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="8ep-MQ-cM9"/>
                                             <constraint firstAttribute="height" constant="30" id="Y1z-0z-ZCL"/>
@@ -520,7 +526,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24X-iM-whj">
-                                        <rect key="frame" x="220" y="25" width="85" height="30"/>
+                                        <rect key="frame" x="218" y="25" width="85" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="VnY-R6-AtF"/>
                                             <constraint firstAttribute="height" constant="30" id="fEb-TZ-JWe"/>
@@ -532,10 +538,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gU-bJ-lOg">
-                                        <rect key="frame" x="141" y="25" width="92" height="30"/>
+                                        <rect key="frame" x="136" y="25" width="92" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="0D4-o9-SyF"/>
-                                            <constraint firstAttribute="width" constant="70" id="733-an-cju"/>
+                                            <constraint firstAttribute="width" constant="100" id="733-an-cju"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <state key="normal" title="Sliders"/>
