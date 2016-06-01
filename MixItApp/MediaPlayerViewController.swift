@@ -56,7 +56,7 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
         super.viewDidLoad()
         images = NSMutableArray(array:["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg"])
         
-        carouselView.type = .CoverFlow2
+        carouselView.type = .TimeMachine
         carouselView.reloadData()
         
         RatingView.didTouchCosmos = didTouchCosmos
@@ -153,49 +153,7 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
         //self.performSegueWithIdentifier("ListViewController", sender: self)
     }
     
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if(segue.identifier == "ListViewController"){
-//            //albumList = albums as [String]!
-//            //audioURL = albums[selectedIndex] as String
-//            //let newAlbum = NSIndexPath =
-//            let newAlbum = segue.destinationViewController as! MediaPlayerViewController
-//            newAlbum.audioURL = albums[selectedIndex].audioURL!.absoluteString
-//            newAlbum.strTitle = albums[selectedIndex].trackName!
-//            newProjectVC.audioURL = track.audioURL!.absoluteString
-//            newProjectVC.strTitle = track.trackName!
-//            newProjectVC.albums = amtTrackManager.arrTracks as! [AMTTrack]
-//            let urlString = albums[selectedIndex].audioURL!.absoluteString
-//            titleName.text = albums[selectedIndex].trackName
-//            
-//            do {
-//                player = try AVAudioPlayer(contentsOfURL: NSURL(string: urlString)!, fileTypeHint: AVFileTypeMPEGLayer3)
-//        
-//            }catch let error as NSError {
-//                print("AV Sound Error: \(error.localizedDescription)")
-//            }
-//        }
-//    }
-    
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-//        if(segue.identifier == "ListViewController"){
-//            //let indexPath: NSIndexPath = carouselView.indexOfItemView()
-//            //let newProjectVC1 = segue.destinationViewController as! MediaPlayerViewController
-//            player = try AVAudioPlayer(contentsOfURL: NSURL(string: self.audioURL as String)!, fileTypeHint: AVFileTypeMPEGLayer3)
-//            //newProjectVC1.strTitle = self.albumList as! String
-//        
-//        }
-//    }
-    
-//    func playTrack(index: Int) {
-//        self.trackPlayer = nil
-//        let track: AMTTrack = self.arrTracks![index] as! AMTTrack
-//        do{
-//            self.trackPlayer = try AVAudioPlayer(contentsOfURL: track.audioURL!, fileTypeHint: nil)
-//            self.trackPlayer!.play()
-//        }catch {
-//            
-//        }
-//        
+
 //    }
     
     func carousel(carousel: iCarousel, viewForItemAtIndex index: Int, reusingView view: UIView?) -> UIView {
@@ -218,12 +176,7 @@ class MediaPlayerViewController: UIViewController,UIImagePickerControllerDelegat
         }
         return value
     }
-    
-//    func carouselWillBeginScrollingAnimation(carousel: iCarousel) {
-//        <#code#>
-//    }
-    
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

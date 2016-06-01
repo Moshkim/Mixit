@@ -37,11 +37,11 @@
 		A65F0E5E1CF15FE9000FA836 /* RatingAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F0E5D1CF15FE9000FA836 /* RatingAlbum.swift */; };
 		A65F0E601CF16418000FA836 /* CosmosSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F0E5F1CF16418000FA836 /* CosmosSettings.swift */; };
 		A65F0E621CF1673A000FA836 /* CosmosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F0E611CF1673A000FA836 /* CosmosView.swift */; };
+		A69D35781CFF8F59001BED22 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69D35771CFF8F59001BED22 /* Images.xcassets */; };
 		A6C6111E1C897A8000F82F6E /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6111D1C897A8000F82F6E /* RatingControl.swift */; };
 		A6D315961C7A786D00B5EF9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315951C7A786D00B5EF9D /* AppDelegate.swift */; };
 		A6D3159B1C7A786D00B5EF9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D315991C7A786D00B5EF9D /* Main.storyboard */; };
 		A6D3159E1C7A786D00B5EF9D /* MixItApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6D3159C1C7A786D00B5EF9D /* MixItApp.xcdatamodeld */; };
-		A6D315A01C7A786D00B5EF9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6D3159F1C7A786D00B5EF9D /* Assets.xcassets */; };
 		A6D315AE1C7A786D00B5EF9D /* MixItAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315AD1C7A786D00B5EF9D /* MixItAppTests.swift */; };
 		A6D315B91C7A786D00B5EF9D /* MixItAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D315B81C7A786D00B5EF9D /* MixItAppUITests.swift */; };
 		A6D315C71C7A78BD00B5EF9D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D315C61C7A78BD00B5EF9D /* AVFoundation.framework */; };
@@ -225,12 +225,12 @@
 		A65F0E5D1CF15FE9000FA836 /* RatingAlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingAlbum.swift; sourceTree = "<group>"; };
 		A65F0E5F1CF16418000FA836 /* CosmosSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CosmosSettings.swift; sourceTree = "<group>"; };
 		A65F0E611CF1673A000FA836 /* CosmosView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CosmosView.swift; sourceTree = "<group>"; };
+		A69D35771CFF8F59001BED22 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A6C6111D1C897A8000F82F6E /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RatingControl.swift; path = ../RatingControl.swift; sourceTree = "<group>"; };
 		A6D315921C7A786D00B5EF9D /* MixItApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixItApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D315951C7A786D00B5EF9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D3159A1C7A786D00B5EF9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6D3159D1C7A786D00B5EF9D /* MixItApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MixItApp.xcdatamodel; sourceTree = "<group>"; };
-		A6D3159F1C7A786D00B5EF9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6D315A41C7A786D00B5EF9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6D315A91C7A786D00B5EF9D /* MixItAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixItAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D315AD1C7A786D00B5EF9D /* MixItAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixItAppTests.swift; sourceTree = "<group>"; };
@@ -613,7 +613,7 @@
 				CDC12B7F1C8FC3A000F668CD /* Supporting Files */,
 				CDC12B881C8FDE5C00F668CD /* ViewController.swift */,
 				A6D315951C7A786D00B5EF9D /* AppDelegate.swift */,
-				A6D3159F1C7A786D00B5EF9D /* Assets.xcassets */,
+				A69D35771CFF8F59001BED22 /* Images.xcassets */,
 				A6D315A41C7A786D00B5EF9D /* Info.plist */,
 				B2CD8B081C7EB6E6006C0470 /* LaunchScreen.storyboard */,
 				A6D315991C7A786D00B5EF9D /* Main.storyboard */,
@@ -754,7 +754,7 @@
 				TargetAttributes = {
 					A6D315911C7A786D00B5EF9D = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = X32G89VDF5;
+						DevelopmentTeam = 8QNKKD3T66;
 					};
 					A6D315A81C7A786D00B5EF9D = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -798,11 +798,11 @@
 				A657FE5F1CF2B007005B42CE /* 7.jpg in Resources */,
 				A657FE5C1CF2B007005B42CE /* 4.jpg in Resources */,
 				A657FE5A1CF2B007005B42CE /* 2.jpg in Resources */,
-				A6D315A01C7A786D00B5EF9D /* Assets.xcassets in Resources */,
 				A657FE5D1CF2B007005B42CE /* 5.jpg in Resources */,
 				A657FE5E1CF2B007005B42CE /* 6.jpg in Resources */,
 				A657FE621CF2B007005B42CE /* 1.jpg in Resources */,
 				B2CD8B091C7EB6E6006C0470 /* LaunchScreen.storyboard in Resources */,
+				A69D35781CFF8F59001BED22 /* Images.xcassets in Resources */,
 				A6D3159B1C7A786D00B5EF9D /* Main.storyboard in Resources */,
 				312FCDD427514A34A8E33623 /* Music in Resources */,
 				A657FE5B1CF2B007005B42CE /* 3.jpg in Resources */,
@@ -989,6 +989,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
@@ -1010,7 +1011,7 @@
 					"$(PROJECT_DIR)/FFMpegiOS/universal/lib",
 					"$(PROJECT_DIR)/x264-iOS/universal/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mixitappTesting3;
+				PRODUCT_BUNDLE_IDENTIFIER = mixitappTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MixItApp/UserInterfaces/Aacmultitrack-Bridging-Header.h";
@@ -1021,6 +1022,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
@@ -1042,7 +1044,7 @@
 					"$(PROJECT_DIR)/FFMpegiOS/universal/lib",
 					"$(PROJECT_DIR)/x264-iOS/universal/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mixitappTesting3;
+				PRODUCT_BUNDLE_IDENTIFIER = mixitappTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MixItApp/UserInterfaces/Aacmultitrack-Bridging-Header.h";

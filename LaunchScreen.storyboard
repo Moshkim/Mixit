@@ -4,7 +4,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,35 +18,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="gold" highlightedImage="gold" translatesAutoresizingMaskIntoConstraints="NO" id="vvx-d1-lgP">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gloomy-Old-Green-Wall-Abstract-Background-iphone-6-wallpaper-ilikewallpaper_com" translatesAutoresizingMaskIntoConstraints="NO" id="QdJ-IG-otW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MixIt" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-Yh-RWb">
-                                <rect key="frame" x="20" y="180" width="335" height="43"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clipart-music-notes-11949848722015671592musical_note_nicu_bucule_01.svg.hi" translatesAutoresizingMaskIntoConstraints="NO" id="HIZ-Ab-iBU">
+                                <rect key="frame" x="133" y="273" width="109" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="71t-B3-oiD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MixIt" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-Yh-RWb">
+                                <rect key="frame" x="20" y="179" width="335" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="ze1-Ce-POp"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="72"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="vvx-d1-lgP" secondAttribute="bottom" id="AED-4q-JHU"/>
-                            <constraint firstItem="vvx-d1-lgP" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="L0O-On-td7"/>
-                            <constraint firstAttribute="centerX" secondItem="GJd-Yh-RWb" secondAttribute="centerX" id="Q3B-4B-g5h"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="vvx-d1-lgP" secondAttribute="trailing" id="d2s-qD-rf4"/>
-                            <constraint firstItem="vvx-d1-lgP" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="hvg-eD-cQP"/>
-                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="bottom" multiplier="1/3" constant="1" id="moa-c2-u7t"/>
-                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" symbolic="YES" id="x7j-FC-K8j"/>
+                            <constraint firstItem="QdJ-IG-otW" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="58z-EY-BQy"/>
+                            <constraint firstItem="HIZ-Ab-iBU" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="QRc-hq-UJP"/>
+                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="159" id="RZ6-OQ-LbM"/>
+                            <constraint firstItem="QdJ-IG-otW" firstAttribute="centerY" secondItem="HIZ-Ab-iBU" secondAttribute="centerY" id="ejE-fN-Vnc"/>
+                            <constraint firstItem="QdJ-IG-otW" firstAttribute="centerX" secondItem="GJd-Yh-RWb" secondAttribute="centerX" id="fHr-ai-YXm"/>
+                            <constraint firstItem="HIZ-Ab-iBU" firstAttribute="top" secondItem="GJd-Yh-RWb" secondAttribute="bottom" constant="8" symbolic="YES" id="hph-fE-2kU"/>
+                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="4" id="lkk-L2-40W"/>
+                            <constraint firstItem="QdJ-IG-otW" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="mGe-Yp-0l8"/>
+                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="pog-yj-dQe"/>
+                            <constraint firstItem="HIZ-Ab-iBU" firstAttribute="centerX" secondItem="GJd-Yh-RWb" secondAttribute="centerX" id="qG8-hl-xBf"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="374.5"/>
         </scene>
     </scenes>
     <resources>
-        <image name="gold" width="1925" height="1280"/>
+        <image name="Gloomy-Old-Green-Wall-Abstract-Background-iphone-6-wallpaper-ilikewallpaper_com" width="360" height="640"/>
+        <image name="clipart-music-notes-11949848722015671592musical_note_nicu_bucule_01.svg.hi" width="468" height="594"/>
     </resources>
 </document>
